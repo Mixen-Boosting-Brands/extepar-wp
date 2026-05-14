@@ -132,16 +132,14 @@
                     ?>
                 </nav>
                 <div class="navbar-actions">
-                    <a
-                        href="#talento"
-                        class="btn-nav-cta d-none d-lg-inline-flex"
-                        >Talento</a
-                    >
-                    <a
-                        href="#contacto"
-                        class="btn-nav-cta d-none d-lg-inline-flex"
-                        >Evaluar proyecto</a
-                    >
+                    <?php wp_nav_menu( [
+                        'theme_location' => 'extra-menu',
+                        'container'      => false,
+                        'items_wrap'     => '%3$s',
+                        'depth'          => 1,
+                        'fallback_cb'    => false,
+                        'walker'         => new Extepar_CTA_Nav_Walker(),
+                    ] ); ?>
                     <a id="mburger" href="javascript:void(0)" class="d-lg-none">
                         <i class="fas fa-bars"></i>
                     </a>

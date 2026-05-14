@@ -63,6 +63,30 @@ if ( function_exists( 'add_theme_support' ) ) {
     Functions
 \*------------------------------------*/
 
+// Walker for Extra Menu: renders bare <a> tags with CTA classes (no ul/li)
+class Extepar_CTA_Nav_Walker extends Walker_Nav_Menu {
+    public function start_lvl( &$output, $depth = 0, $args = null ) {}
+    public function end_lvl( &$output, $depth = 0, $args = null ) {}
+    public function start_el( &$output, $item, $depth = 0, $args = null, $id = 0 ) {
+        $atts = [
+            'href'   => ! empty( $item->url ) ? $item->url : '',
+            'class'  => 'btn-nav-cta d-none d-lg-inline-flex',
+            'target' => ! empty( $item->target ) ? $item->target : '',
+        ];
+        $atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args, $depth );
+        $attributes = '';
+        foreach ( $atts as $attr => $value ) {
+            if ( $value !== '' ) {
+                $value       = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
+                $attributes .= ' ' . $attr . '="' . $value . '"';
+            }
+        }
+        $title   = apply_filters( 'the_title', $item->title, $item->ID );
+        $output .= '<a' . $attributes . '>' . $title . '</a>';
+    }
+    public function end_el( &$output, $item, $depth = 0, $args = null ) {}
+}
+
 // HTML5 Blank navigation
 function html5blank_nav() {
     wp_nav_menu(
