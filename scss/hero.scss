@@ -1,0 +1,46 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    overflow: hidden;
+
+    &__bg {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to right,
+            rgba($brand-secondary, 0.85) 0%,
+            rgba($brand-secondary, 0.55) 60%,
+            rgba($brand-secondary, 0.85) 100%
+        );
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        font-size: clamp(2.4rem, 5vw, 3.8rem);
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        @include font-size(1.6rem);
+        color: rgba(white, 1);
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,417 @@
+// ══════════════════════════════════════════════════════════════════════
+// TIPOGRAFÍA COMPARTIDA — Settings generales para todas las secciones
+// ══════════════════════════════════════════════════════════════════════
+
+%section-title {
+    font-size: clamp(3rem, 4.5vw, 3.8rem);
+    line-height: 1.15;
+    color: $brand-text;
+    margin-bottom: 1rem;
+}
+
+%section-lead {
+    font-size: 1.1rem;
+    line-height: 1.65;
+    color: $brand-text;
+}
+
+%section-eyebrow {
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $brand-yellow;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+// ── Shared utilities ─────────────────────────────────────────────────
+.text-accent {
+    color: $brand-yellow !important;
+}
+
+.bg-brand-gray {
+    background-color: $brand-gray;
+}
+
+.bg-brand-yellow-light {
+    background-color: $brand-yellow-light;
+}
+
+.bg-brand-yellow-2 {
+    background-color: $brand-yellow-2;
+}
+
+.bg-brand-dark {
+    background-color: $brand-dark;
+}
+
+// ── Overlapping cards layout (#base) ─────────────────────────────────
+.cards-overlap {
+    position: relative;
+
+    &__back {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__front {
+        position: relative;
+        z-index: 2;
+        margin-top: -2rem; // mobile: slight vertical overlap
+
+        .check-list {
+            box-shadow: 0 -6px 32px rgba($brand-dark, 0.14);
+        }
+
+        @media (min-width: 992px) {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 22%;
+            right: 0;
+            margin-top: 0;
+            display: flex;
+
+            .check-list {
+                flex: 1;
+                height: auto;
+                transform: scale(1.04);
+                transform-origin: left center;
+                box-shadow: -8px 4px 40px rgba($brand-dark, 0.18);
+            }
+        }
+    }
+}
+
+// ── Section: intro split (La base / Control real) ─────────────────────
+.section-split {
+    padding: 80px 0;
+
+    &__heading {
+        @extend %section-title;
+    }
+    &__lead {
+        @extend %section-lead;
+    }
+}
+
+#nosotros {
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        @include absolute-center-y;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        background: url("../../assets/images/isotipo.png") no-repeat center
+            center / contain;
+        z-index: 1;
+    }
+}
+
+// Cards → scss/cards.scss
+
+// Pills → scss/cards.scss
+
+// ── Brand decorative mark ─────────────────────────────────────────────
+.brand-mark {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.07;
+    width: 380px;
+    pointer-events: none;
+    user-select: none;
+
+    img {
+        width: 100%;
+    }
+}
+
+// ── Process steps ─────────────────────────────────────────────────────
+.step-flow {
+    padding: 80px 0;
+
+    &__intro {
+        @extend %section-eyebrow;
+    }
+    &__heading {
+        @extend %section-title;
+    }
+    &__sub {
+        @extend %section-lead;
+        margin-bottom: 2.5rem;
+    }
+}
+
+// ── Services section ──────────────────────────────────────────────────
+.services-section {
+    padding: 80px 0;
+
+    &__heading {
+        @extend %section-title;
+    }
+    &__sub {
+        @extend %section-lead;
+        margin-bottom: 2.5rem;
+    }
+
+    &__img-wrapper {
+        width: 100%;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 8px 40px rgba($brand-dark, 0.12);
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+// ── CTA banner (dark con imagen de fondo) ─────────────────────────────
+.cta-banner {
+    position: relative;
+    padding: 200px 0;
+    overflow: hidden;
+
+    &__bg {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba($brand-secondary, 0.6);
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        @extend %section-title;
+        color: white; // override: fondo oscuro
+        margin: 0;
+    }
+
+    #control {
+        @include font-size(3.6rem);
+        position: relative;
+        top: -2px;
+    }
+
+    #es-ejecucion-en-campo {
+        position: relative;
+
+        @media (min-width: 992px) {
+            left: 80px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 198px;
+            height: 130px;
+            background: url("../../assets/images/maquinaria.png") center
+                center / contain no-repeat;
+            left: -200px;
+            top: -16px;
+        }
+    }
+}
+
+// ── Project cards ─────────────────────────────────────────────────────
+.projects-section {
+    padding: 80px 0;
+
+    &__heading {
+        @extend %section-title;
+    }
+    &__sub {
+        @extend %section-lead;
+        max-width: 500px;
+    }
+
+    &__link {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: $brand-text;
+        text-decoration: none;
+        border-bottom: 2px solid $brand-yellow;
+        padding-bottom: 2px;
+        white-space: nowrap;
+        @include transition(ease, 0.2s);
+
+        &:hover {
+            color: $brand-yellow;
+        }
+    }
+}
+
+// ── Audience cards (Trabajamos con) ───────────────────────────────────
+.audience-section {
+    padding: 80px 0;
+
+    &__heading {
+        @extend %section-title;
+        margin-bottom: 2.5rem;
+    }
+}
+
+// ── Stats / milestone banner ───────────────────────────────────────────
+.stats-banner {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+
+    &__bg {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba($brand-secondary, 0.6);
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        @extend %section-title;
+        color: white; // override: fondo oscuro
+        margin-bottom: 1.25rem;
+    }
+
+    &__text {
+        @extend %section-lead;
+        color: rgba(white, 1); // override: fondo oscuro
+    }
+
+    #aniv {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: url("../../assets/images/extepar-mark-yellow.png")
+                no-repeat center center / contain;
+            width: 150px;
+            height: 160px;
+            right: -104px;
+            top: -45px;
+            z-index: -1;
+        }
+    }
+}
+
+// ── Contact section ────────────────────────────────────────────────────
+.contact-section {
+    padding: 80px 0;
+
+    &__heading {
+        @extend %section-title;
+    }
+    &__lead {
+        @extend %section-lead;
+        max-width: 400px;
+    }
+
+    .form-label {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: $brand-text;
+        margin-bottom: 0.35rem;
+    }
+
+    .form-control {
+        border: 2px solid transparent;
+        border-radius: 50px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+        color: $brand-text;
+        background: white;
+        @include transition(ease, 0.2s);
+
+        &:focus {
+            border-color: transparent;
+            box-shadow: 0 0 0 3px rgba($brand-yellow, 0.3);
+            background: white;
+        }
+
+        &::placeholder {
+            color: #b0b6be;
+        }
+
+        // Bootstrap validation states
+        .was-validated &:invalid,
+        &.is-invalid {
+            border-color: #dc3545;
+            box-shadow: none;
+
+            &:focus {
+                box-shadow: 0 0 0 3px rgba(#dc3545, 0.2);
+            }
+        }
+
+        .was-validated &:valid,
+        &.is-valid {
+            border-color: #198754;
+            box-shadow: none;
+
+            &:focus {
+                box-shadow: 0 0 0 3px rgba(#198754, 0.2);
+            }
+        }
+    }
+
+    .invalid-feedback {
+        padding-left: 16px;
+        font-size: 0.78rem;
+    }
+
+    textarea.form-control {
+        border-radius: 20px;
+        resize: vertical;
+    }
+
+    .btn-submit {
+        background: $brand-yellow;
+        color: $brand-dark;
+        font-weight: 700;
+        font-size: 0.95rem;
+        border: none;
+        border-radius: 50px;
+        padding: 13px 36px;
+        @include transition(ease, 0.2s);
+
+        &:hover,
+        &:focus {
+            background: darken($brand-yellow, 8%);
+            color: $brand-dark;
+        }
+    }
+}
