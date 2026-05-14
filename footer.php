@@ -58,31 +58,13 @@
                         >
                             <p class="site-footer__heading">Menú</p>
                             <nav>
-                                <ul class="site-footer__nav">
-                                    <li><a href="/">Inicio</a></li>
-                                    <li>
-                                        <a href="#servicios">Servicios</a>
-                                    </li>
-                                    <li>
-                                        <a href="#proyectos">Proyectos</a>
-                                    </li>
-                                    <li>
-                                        <a href="#como-trabajamos"
-                                            >Cómo trabajamos</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="#capacidad-tecnica"
-                                            >Capacidad técnica</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="#nosotros">Nosotros</a>
-                                    </li>
-                                    <li>
-                                        <a href="#contacto">Contacto</a>
-                                    </li>
-                                </ul>
+                                <?php wp_nav_menu( [
+                                    'theme_location' => 'header-menu',
+                                    'container'      => false,
+                                    'menu_class'     => 'site-footer__nav',
+                                    'depth'          => 1,
+                                    'fallback_cb'    => false,
+                                ] ); ?>
                             </nav>
                         </div>
                     </div>
