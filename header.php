@@ -73,41 +73,14 @@
                     />
                 </a>
                 <nav>
-                    <ul id="navmenu" class="list-unstyled mb-0">
-                        <li>
-                            <a class="anchor" id="btn-nav-1" href="#servicios"
-                                >Servicios</a
-                            >
-                        </li>
-                        <li>
-                            <a class="anchor" id="btn-nav-2" href="#proyectos"
-                                >Proyectos</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="anchor"
-                                id="btn-nav-3"
-                                href="#como-trabajamos"
-                                >Cómo trabajamos</a
-                            >
-                        </li>
-                        <li>
-                            <a class="anchor" id="btn-nav-4" href="#capacidades"
-                                >Capacidad técnica</a
-                            >
-                        </li>
-                        <li>
-                            <a class="anchor" id="btn-nav-5" href="#nosotros"
-                                >Nosotros</a
-                            >
-                        </li>
-                        <li>
-                            <a class="anchor" id="btn-nav-6" href="#contacto"
-                                >Contacto</a
-                            >
-                        </li>
-                    </ul>
+                    <?php wp_nav_menu( [
+                        'theme_location' => 'header-menu',
+                        'container'      => false,
+                        'menu_id'        => 'navmenu',
+                        'menu_class'     => 'list-unstyled mb-0',
+                        'depth'          => 1,
+                        'fallback_cb'    => false,
+                    ] ); ?>
                 </nav>
                 <div id="contacto-menu">
                     <ul class="list-unstyled">
@@ -142,26 +115,21 @@
                     />
                 </a>
                 <nav id="nav-desktop" class="d-none d-lg-block">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a href="#servicios">Servicios</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#proyectos">Proyectos</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#como-trabajamos">Cómo trabajamos</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#capacidades">Capacidad técnica</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#nosotros">Nosotros</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#contacto">Contacto</a>
-                        </li>
-                    </ul>
+                    <?php
+                    $add_inline_item = function( $classes ) {
+                        $classes[] = 'list-inline-item';
+                        return $classes;
+                    };
+                    add_filter( 'nav_menu_css_class', $add_inline_item );
+                    wp_nav_menu( [
+                        'theme_location' => 'header-menu',
+                        'container'      => false,
+                        'menu_class'     => 'list-inline mb-0',
+                        'depth'          => 1,
+                        'fallback_cb'    => false,
+                    ] );
+                    remove_filter( 'nav_menu_css_class', $add_inline_item );
+                    ?>
                 </nav>
                 <div class="navbar-actions">
                     <a
