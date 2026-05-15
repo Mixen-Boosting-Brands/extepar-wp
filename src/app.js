@@ -83,22 +83,21 @@ if (btnLogo) {
 // Get the ul element by its ID
 var ulElement = document.getElementById("navmenu");
 
-// Get all li elements within the ul element
-var liElements = ulElement.getElementsByTagName("li");
+if (ulElement) {
+    var liElements = ulElement.getElementsByTagName("li");
 
-// Loop through each li element
-for (var i = 0; i < liElements.length; i++) {
-    // Do stuff with each li element
-    var currentLi = liElements[i];
-    currentLi.addEventListener("click", function () {
-        var menu = document.querySelector(".menu");
-        var navbar = document.getElementById("navbar");
-        var backdrop = document.getElementById("backdrop");
+    for (var i = 0; i < liElements.length; i++) {
+        var currentLi = liElements[i];
+        currentLi.addEventListener("click", function () {
+            var menu = document.querySelector(".menu");
+            var navbar = document.getElementById("navbar");
+            var backdrop = document.getElementById("backdrop");
 
-        menu.classList.remove("menu-abierto");
-        navbar.classList.remove("opacity-0");
-        backdrop.classList.remove("backdrop-opacity-1");
-    });
+            menu.classList.remove("menu-abierto");
+            navbar.classList.remove("opacity-0");
+            backdrop.classList.remove("backdrop-opacity-1");
+        });
+    }
 }
 
 const btnContacto = document.getElementById("btn-contacto");
