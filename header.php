@@ -5,7 +5,7 @@
 		<title><?php
   wp_title("");
   if (wp_title("", false)) {
-      echo " : ";
+      echo " - ";
   }
   bloginfo("name");
   ?></title>
@@ -73,14 +73,14 @@
                     />
                 </a>
                 <nav>
-                    <?php wp_nav_menu( [
-                        'theme_location' => 'header-menu',
-                        'container'      => false,
-                        'menu_id'        => 'navmenu',
-                        'menu_class'     => 'list-unstyled mb-0',
-                        'depth'          => 1,
-                        'fallback_cb'    => false,
-                    ] ); ?>
+                    <?php wp_nav_menu([
+                        "theme_location" => "header-menu",
+                        "container" => false,
+                        "menu_id" => "navmenu",
+                        "menu_class" => "list-unstyled mb-0",
+                        "depth" => 1,
+                        "fallback_cb" => false,
+                    ]); ?>
                 </nav>
                 <div id="contacto-menu">
                     <ul class="list-unstyled">
@@ -116,30 +116,30 @@
                 </a>
                 <nav id="nav-desktop" class="d-none d-lg-block">
                     <?php
-                    $add_inline_item = function( $classes ) {
-                        $classes[] = 'list-inline-item';
+                    $add_inline_item = function ($classes) {
+                        $classes[] = "list-inline-item";
                         return $classes;
                     };
-                    add_filter( 'nav_menu_css_class', $add_inline_item );
-                    wp_nav_menu( [
-                        'theme_location' => 'header-menu',
-                        'container'      => false,
-                        'menu_class'     => 'list-inline mb-0',
-                        'depth'          => 1,
-                        'fallback_cb'    => false,
-                    ] );
-                    remove_filter( 'nav_menu_css_class', $add_inline_item );
+                    add_filter("nav_menu_css_class", $add_inline_item);
+                    wp_nav_menu([
+                        "theme_location" => "header-menu",
+                        "container" => false,
+                        "menu_class" => "list-inline mb-0",
+                        "depth" => 1,
+                        "fallback_cb" => false,
+                    ]);
+                    remove_filter("nav_menu_css_class", $add_inline_item);
                     ?>
                 </nav>
                 <div class="navbar-actions">
-                    <?php wp_nav_menu( [
-                        'theme_location' => 'extra-menu',
-                        'container'      => false,
-                        'items_wrap'     => '%3$s',
-                        'depth'          => 1,
-                        'fallback_cb'    => false,
-                        'walker'         => new Extepar_CTA_Nav_Walker(),
-                    ] ); ?>
+                    <?php wp_nav_menu([
+                        "theme_location" => "extra-menu",
+                        "container" => false,
+                        "items_wrap" => '%3$s',
+                        "depth" => 1,
+                        "fallback_cb" => false,
+                        "walker" => new Extepar_CTA_Nav_Walker(),
+                    ]); ?>
                     <a id="mburger" href="javascript:void(0)" class="d-lg-none">
                         <i class="fas fa-bars"></i>
                     </a>
