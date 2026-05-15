@@ -58,13 +58,13 @@
                         >
                             <p class="site-footer__heading">Menú</p>
                             <nav>
-                                <?php wp_nav_menu( [
-                                    'theme_location' => 'header-menu',
-                                    'container'      => false,
-                                    'menu_class'     => 'site-footer__nav',
-                                    'depth'          => 1,
-                                    'fallback_cb'    => false,
-                                ] ); ?>
+                                <?php wp_nav_menu([
+                                    "theme_location" => "header-menu",
+                                    "container" => false,
+                                    "menu_class" => "site-footer__nav",
+                                    "depth" => 1,
+                                    "fallback_cb" => false,
+                                ]); ?>
                             </nav>
                         </div>
                     </div>
@@ -97,7 +97,9 @@
      "name",
  ); ?>. Todos los derechos reservados.</span>
                 <span>
-                    <a href="#">Aviso de privacidad</a>
+                    <a href="<?php echo get_permalink(
+                        3,
+                    ); ?>">Aviso de privacidad</a>
                     &nbsp;·&nbsp; Design by:
                     <a href="https://mixen.mx/" target="_blank">Mixen</a>
                 </span>
