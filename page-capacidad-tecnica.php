@@ -41,7 +41,7 @@ get_header(); ?>
                 </p>
                 <a
                 <a
-                    href="#contacto"
+                    href="<?php echo esc_url(home_url("/evaluar-proyecto")); ?>"
                     class="btn btn-primary rounded-pill"
                     data-aos="fade-up"
                     data-aos-delay="160"

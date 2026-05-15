@@ -31,7 +31,7 @@
                     cada etapa.
                 </p>
                 <a
-                    href="#contacto"
+                    href="<?php echo esc_url(home_url("/contacto")); ?>"
                     class="btn btn-primary rounded-pill"
                     data-aos="fade-up"
                     data-aos-delay="160"

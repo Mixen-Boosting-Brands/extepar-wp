@@ -6,7 +6,9 @@
 <section class="hero">
     <div
         class="hero__bg"
-        style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-bg.jpg');"
+        style="background-image: url('<?php echo esc_url(
+            get_template_directory_uri(),
+        ); ?>/assets/images/hero-bg.jpg');"
     ></div>
     <div class="hero__overlay"></div>
     <div class="container">
@@ -37,13 +39,13 @@
                     data-aos-delay="240"
                 >
                     <a
-                        href="<?php echo esc_url(home_url('/')); ?>"
+                        href="<?php echo esc_url(home_url("/")); ?>"
                         class="btn btn-primary rounded-pill"
                     >
                         Volver al inicio
                     </a>
                     <a
-                        href="<?php echo esc_url(home_url('/#contacto')); ?>"
+                        href="<?php echo esc_url(home_url("/contacto")); ?>"
                         class="btn btn-outline-light rounded-pill"
                     >
                         Contactar
@@ -84,7 +86,7 @@
                         Conoce todos nuestros servicios de infraestructura.
                     </p>
                     <a
-                        href="<?php echo esc_url(home_url('/servicios')); ?>"
+                        href="<?php echo esc_url(home_url("/servicios")); ?>"
                         class="project-card__link text-accent mt-3 d-inline-block"
                     >
                         Ver servicios <i class="fas fa-arrow-right"></i>
@@ -105,7 +107,7 @@
                         Explora los proyectos ejecutados por Extepar.
                     </p>
                     <a
-                        href="<?php echo esc_url(home_url('/proyectos')); ?>"
+                        href="<?php echo esc_url(home_url("/proyectos")); ?>"
                         class="project-card__link text-accent mt-3 d-inline-block"
                     >
                         Ver proyectos <i class="fas fa-arrow-right"></i>
@@ -126,7 +128,7 @@
                         Conoce al equipo y la historia de Extepar.
                     </p>
                     <a
-                        href="<?php echo esc_url(home_url('/nosotros')); ?>"
+                        href="<?php echo esc_url(home_url("/nosotros")); ?>"
                         class="project-card__link text-accent mt-3 d-inline-block"
                     >
                         Conocer más <i class="fas fa-arrow-right"></i>
@@ -147,7 +149,7 @@
                         Habla con nosotros sobre tu próximo proyecto.
                     </p>
                     <a
-                        href="<?php echo esc_url(home_url('/contacto')); ?>"
+                        href="<?php echo esc_url(home_url("/contacto")); ?>"
                         class="project-card__link text-accent mt-3 d-inline-block"
                     >
                         Contactar <i class="fas fa-arrow-right"></i>
@@ -158,6 +160,6 @@
     </div>
 </section>
 
-<?php get_template_part('template-parts/control-banner'); ?>
+<?php get_template_part("template-parts/control-banner"); ?>
 
 <?php get_footer(); ?>
