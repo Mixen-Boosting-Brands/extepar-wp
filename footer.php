@@ -108,13 +108,13 @@
     </footer>
 
     <!-- WhatsApp button -->
-    <a
+    <!-- a
         href="https://wa.me/52614?text=Hola%20Extepar,%20necesito%20información."
         class="whatsapp"
         target="_blank"
     >
         <i class="fab fa-whatsapp"></i>
-    </a>
+    </a -->
 
     <?php wp_footer(); ?>
 
