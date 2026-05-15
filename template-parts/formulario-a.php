@@ -22,7 +22,7 @@
                 <form
                     id="form-contacto"
                     class="needs-validation"
-                    action="#"
+                    action="<?php echo get_template_directory_uri(); ?>/mailer.php"
                     method="POST"
                     novalidate
                 >
