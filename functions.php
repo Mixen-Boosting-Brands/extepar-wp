@@ -477,6 +477,34 @@ function create_post_type_html5() {
 }
 
 /*------------------------------------*\
+    Custom Taxonomies
+\*------------------------------------*/
+
+function extepar_register_tipo_proyecto() {
+    register_taxonomy( 'tipo-proyecto', [ 'proyectos-extepar' ], [
+        'labels' => [
+            'name'              => 'Tipos de proyecto',
+            'singular_name'     => 'Tipo de proyecto',
+            'search_items'      => 'Buscar tipos',
+            'all_items'         => 'Todos los tipos',
+            'edit_item'         => 'Editar tipo',
+            'update_item'       => 'Actualizar tipo',
+            'add_new_item'      => 'Agregar tipo',
+            'new_item_name'     => 'Nuevo tipo de proyecto',
+            'menu_name'         => 'Tipo de proyecto',
+        ],
+        'hierarchical'      => true,
+        'public'            => true,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'show_in_nav_menus' => false,
+        'show_in_rest'      => true,
+        'rewrite'           => [ 'slug' => 'tipo-proyecto' ],
+    ] );
+}
+add_action( 'init', 'extepar_register_tipo_proyecto' );
+
+/*------------------------------------*\
     ShortCode Functions
 \*------------------------------------*/
 
