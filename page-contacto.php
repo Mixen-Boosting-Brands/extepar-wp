@@ -29,7 +29,6 @@ get_header(); ?>
 
 <?php get_template_part("template-parts/formulario-a"); ?>
 
-<?php if (is_page("16")): ?>
 <!-- ══════════════════════════════════════════════════════════
     PROYECTOS DONDE PODEMOS APORTAR VALOR
 ═══════════════════════════════════════════════════════════ -->
@@ -47,4 +46,5 @@ get_header(); ?>
         </div>
     </div>
 </section>
-<?php endif; ?>
+
+<?php get_footer(); ?>
