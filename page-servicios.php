@@ -20,7 +20,7 @@ get_header(); ?>
             <div class="col-12 col-lg-9">
                 <h1 class="hero__title" data-aos="fade-up">
                     <strong>Servicios</strong> enfocados<br />
-                    en la base del proyecto
+                    en el control de obra
                 </h1>
                 <p
                     class="hero__text"
@@ -145,14 +145,7 @@ get_header(); ?>
                             <strong>Base técnica del proyecto</strong>
                         </p>
                         <p class="project-card__text">
-                            Preparación del terreno con control en
-                            niveles, compactación y condiciones
-                            iniciales.
-                        </p>
-                        <p class="project-card__text">
-                            Esta etapa define la estabilidad del
-                            proyecto y reduce riesgos que pueden
-                            trasladarse a todo lo que sigue.
+                            Esta etapa, define la estabilidad del proyecto y previene que el cliente tome decisiones bajo presión durante el resto del proyecto.
                         </p>
                     </div>
                 </div>
@@ -166,7 +159,7 @@ get_header(); ?>
                     <img
                         class="project-card__img"
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb-servicio-2.png"
-                        alt="Terracerías y movimiento de tierras"
+                        alt="Plataformas industriales"
                     />
                     <div class="project-card__body">
                         <h3 class="project-card__title">
@@ -200,7 +193,7 @@ get_header(); ?>
                     <img
                         class="project-card__img"
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb-servicio-3.png"
-                        alt="Terracerías y movimiento de tierras"
+                        alt="Mejoramiento de suelos"
                     />
                     <div class="project-card__body">
                         <h3 class="project-card__title">
@@ -233,7 +226,7 @@ get_header(); ?>
                     <img
                         class="project-card__img"
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb-servicio-4.png"
-                        alt="Terracerías y movimiento de tierras"
+                        alt="Estabilización"
                     />
                     <div class="project-card__body">
                         <h3 class="project-card__title">
@@ -265,12 +258,11 @@ get_header(); ?>
                     <img
                         class="project-card__img"
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb-servicio-5.png"
-                        alt="Terracerías y movimiento de tierras"
+                        alt="Mantenimiento e infraestructura de parques logísticos"
                     />
                     <div class="project-card__body">
                         <h3 class="project-card__title">
-                            Asfaltos y mantenimiento de parques
-                            logísticos
+                            Mantenimiento e infraestructura de parques logísticos
                         </h3>
                         <p class="project-card__text">
                             <strong

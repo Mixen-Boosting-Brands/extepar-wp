@@ -62,9 +62,8 @@ get_header(); ?>
         <div class="row gy-4">
             <div class="col-lg-7" data-aos="fade-right">
                 <h2 class="section-split__heading">
-                    No solo es ejecutar.<br />
-                    <strong>Es sostener el</strong><br />
-                    <strong>proceso</strong> en campo.
+                    No dependemos de héroes,<br />
+                    <strong>dependemos de un sistema</strong>.
                 </h2>
                 <p class="section-split__lead">
                     La mayoría de los problemas en obra no vienen del diseño, sino de la falta de seguimiento durante la ejecución.

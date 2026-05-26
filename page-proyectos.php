@@ -69,13 +69,30 @@ get_header(); ?>
                     <strong>nivel de control</strong>
                 </h2>
                 <p class="section-split__lead">
-                    Extepar interviene en proyectos donde la base del
-                    terreno define el desempeño de todo lo que sigue.
+                    Extepar interviene en la etapa donde una desviación puede impactar todo el proyecto.
                 </p>
                 <p class="section-split__lead">
-                    En este tipo de obras, la falta de control en etapas
-                    iniciales se traduce en retrasos, reprocesos y
-                    presión en fases posteriores.
+                    Por eso trabajamos con:
+                </p>
+                <ul>
+                    <li>
+                        Sistemas estructurados
+                    </li>
+                    <li>
+                        Seguimiento permanente
+                    </li>
+                    <li>
+                         Información verificable
+                    </li>
+                    <li>
+                        Escalamiento rápido
+                    </li>
+                    <li>
+                        Control operativo en campo
+                    </li>
+                </ul>
+                <p class="section-split__lead">
+                    No dependemos de héroes, dependemos de sistema y ejecución disciplinada.
                 </p>
             </div>
             <div
@@ -221,50 +238,65 @@ get_header(); ?>
         </div>
         <?php
         $proyectos = new WP_Query([
-            'post_type'      => 'proyectos-extepar',
-            'posts_per_page' => 6,
-            'orderby'        => 'date',
-            'order'          => 'DESC',
-            'post_status'    => 'publish',
+            "post_type" => "proyectos-extepar",
+            "posts_per_page" => 6,
+            "orderby" => "date",
+            "order" => "DESC",
+            "post_status" => "publish",
         ]);
         $hay_mas = $proyectos->found_posts > 6;
         ?>
         <div class="row g-4">
-            <?php if ($proyectos->have_posts()) :
+            <?php if ($proyectos->have_posts()):
                 $i = 0;
-                while ($proyectos->have_posts()) : $proyectos->the_post();
-                $i++;
-            ?>
+                while ($proyectos->have_posts()):
+
+                    $proyectos->the_post();
+                    $i++;
+                    ?>
             <div
                 class="col-12 col-md-4"
                 data-aos="fade-up"
-                data-aos-delay="<?php echo ($i % 3 === 1 ? 0 : ($i % 3 === 2 ? 80 : 160)); ?>"
+                data-aos-delay="<?php echo $i % 3 === 1
+                    ? 0
+                    : ($i % 3 === 2
+                        ? 80
+                        : 160); ?>"
             >
                 <div class="project-card">
-                    <?php if (has_post_thumbnail()) : ?>
+                    <?php if (has_post_thumbnail()): ?>
                     <img
                         class="project-card__img"
-                        src="<?php echo esc_url(get_the_post_thumbnail_url(null, 'medium_large')); ?>"
+                        src="<?php echo esc_url(
+                            get_the_post_thumbnail_url(null, "medium_large"),
+                        ); ?>"
                         alt="<?php the_title_attribute(); ?>"
                     />
-                    <?php else : ?>
+                    <?php else: ?>
                     <img
                         class="project-card__img"
-                        src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/proyecto-1.jpg"
+                        src="<?php echo esc_url(
+                            get_template_directory_uri(),
+                        ); ?>/assets/images/proyecto-1.jpg"
                         alt="<?php the_title_attribute(); ?>"
                     />
                     <?php endif; ?>
                     <div class="project-card__body">
                         <?php
-                        $tipos = get_the_terms(get_the_ID(), 'tipo-proyecto');
-                        if ($tipos && !is_wp_error($tipos)) : ?>
+                        $tipos = get_the_terms(get_the_ID(), "tipo-proyecto");
+                        if ($tipos && !is_wp_error($tipos)): ?>
                         <span class="project-card__type">
                             <?php echo esc_html($tipos[0]->name); ?>
                         </span>
-                        <?php endif; ?>
+                        <?php endif;
+                        ?>
                         <h3 class="project-card__title"><?php the_title(); ?></h3>
                         <p class="project-card__text">
-                            <?php echo wp_trim_words(get_the_excerpt(), 15, '…'); ?>
+                            <?php echo wp_trim_words(
+                                get_the_excerpt(),
+                                15,
+                                "…",
+                            ); ?>
                         </p>
                         <a href="<?php the_permalink(); ?>" class="project-card__link">
                             Ver proyecto
@@ -273,14 +305,19 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-            <?php endwhile; wp_reset_postdata(); endif; ?>
+            <?php
+                endwhile;
+                wp_reset_postdata();
+            endif; ?>
         </div>
 
-        <?php if ($hay_mas) : ?>
+        <?php if ($hay_mas): ?>
         <div class="row mt-5" data-aos="fade-up">
             <div class="col-12 text-center">
                 <a
-                    href="<?php echo esc_url(get_post_type_archive_link('proyectos-extepar')); ?>"
+                    href="<?php echo esc_url(
+                        get_post_type_archive_link("proyectos-extepar"),
+                    ); ?>"
                     class="btn btn-primary rounded-pill"
                 >
                     Ver más proyectos
