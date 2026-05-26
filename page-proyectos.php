@@ -19,8 +19,8 @@ get_header(); ?>
         <div class="row">
             <div class="col-12 col-lg-9">
                 <h1 class="hero__title" data-aos="fade-up">
-                    <strong>Proyectos</strong> donde la<br />
-                    base define <strong>el resultado</strong>
+                    <strong>Obras a la primera,</strong> a tiempo<br />
+                    <strong>y sin sorpresas</strong>
                 </h1>
                 <p
                     class="hero__text"
