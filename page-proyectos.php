@@ -74,7 +74,7 @@ get_header(); ?>
                 <p class="section-split__lead">
                     Por eso trabajamos con:
                 </p>
-                <ul>
+                <ul class="section-split__lead">
                     <li>
                         Sistemas estructurados
                     </li>
