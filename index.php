@@ -25,10 +25,7 @@
                     data-aos="fade-up"
                     data-aos-delay="80"
                 >
-                    Terracerías, plataformas y mejoramiento de suelos
-                    para proyectos, obras en general industriales
-                    ejecutados con seguimiento en campo y claridad en
-                    cada etapa.
+                    Terracerías, plataformas y mejoramiento de suelos para proyectos, obras de infraestructura, ejecutados con seguimiento en campo y claridad en cada etapa.
                 </p>
                 <a
                     href="<?php echo esc_url(home_url("/contacto")); ?>"
@@ -55,8 +52,7 @@
                     <strong>define el resultado.</strong>
                 </h2>
                 <p class="section-split__lead">
-                    Extepar interviene en esta etapa crítica para evitar
-                    que esos errores ocurran.
+                    Extepar interviene en cada etapa critica evitando sorpresas.
                 </p>
             </div>
             <div class="col-12">
@@ -67,7 +63,7 @@
                     >
                         <div class="check-list card--dark">
                             <h3 class="check-list__label">
-                                Cuando la base falla:
+                                Cuando hay sorpresas:
                             </h3>
                             <ul>
                                 <li>
@@ -96,7 +92,7 @@
                     >
                         <div class="check-list card--yellow">
                             <p class="check-list__label">
-                                Control desde el inicio:
+                                Control con transparencia:
                             </p>
                             <ul>
                                 <li>
@@ -144,18 +140,12 @@
                     por <strong>capacidad operativa.</strong>
                 </h2>
                 <p class="section-split__lead mb-4">
-                    No se trata solo de ejecutar. Se trata de
-                    <strong
-                        >supervisar, validar y decidir en campo</strong
-                    >
-                    en los momentos que realmente importan.
+                    No solo ejecutamos, usamos un sistema de supervisión, validación y decisiones en campo, hacemos sencillo lo complejo, obras a la primera y sin sorpresas.
                 </p>
                 <p class="section-split__lead mb-4">
-                    <strong
-                        >Extepar mantiene visibilidad constante</strong
-                    >
-                    sobre lo que ocurre en una obra para mantener el
-                    control durante toda la ejecución.
+                    Extepar mantiene transparencia constante sobre lo que lo que ocurre en obra, asegurando el control total de tu <a href="<?php echo esc_url(
+                        home_url("/contacto"),
+                    ); ?>">proyecto</a>.
                 </p>
 
                 <div class="pill-group mb-3">
@@ -170,7 +160,7 @@
                         >Decisiones basadas en condiciones reales</a
                     >
                     <a href="#" class="pill pill--light"
-                        >Sin dependencia en correcciones</a
+                        >Prevención antes que corrección</a
                     >
                 </div>
 
@@ -183,7 +173,7 @@
                         >Maquinaria y equipo propio</a
                     >
                     <a href="#" class="pill"
-                        >Enfoque en proyectos industriales</a
+                        >Sistema de trabajo Extepar</a
                     >
                     <a href="#" class="pill"
                         >Ejecución con control constante</a
@@ -207,7 +197,7 @@
                 </h2>
                 <p class="step-flow__sub">
                     Cada etapa está diseñada para mantener control y
-                    reducir errores desde la base.
+                    reducir errores desde el inicio.
                 </p>
             </div>
         </div>
@@ -261,8 +251,7 @@
                         Ejecución Controlada
                     </h3>
                     <p class="step-card__text">
-                        Operación con maquinaria propia y supervisión
-                        técnica constante en campo.
+                        Operación con sistema y supervisión técnica constante en campo.
                     </p>
                 </div>
             </div>
@@ -315,11 +304,10 @@
             <div class="col-12 text-center" data-aos="fade-up">
                 <h2 class="services-section__heading">
                     <strong>Servicios enfocados</strong><br />
-                    en la base del proyecto.
+                    en la necesidad de tu proyecto.
                 </h2>
                 <p class="services-section__sub">
-                    Servicios diseñados para asegurar una base sólida,
-                    precisa y confiable para todo lo que sigue.
+                    Servicios diseñados para asegurar una solida, precisa y confiable ejecución.
                 </p>
             </div>
         </div>
