@@ -17,8 +17,8 @@
         <div class="row">
             <div class="col-12 col-lg-9">
                 <h1 class="hero__title" data-aos="fade-up">
-                    <strong>Control real</strong> en la<br />
-                    base de tu proyecto
+                    <strong>Control</strong> con<br />
+                    transparencia total en tu proyecto
                 </h1>
                 <p
                     class="hero__text"
