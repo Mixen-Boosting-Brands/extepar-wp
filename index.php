@@ -145,7 +145,7 @@
                 <p class="section-split__lead mb-4">
                     Extepar mantiene transparencia constante sobre lo que lo que ocurre en obra, asegurando el control total de tu <a href="<?php echo esc_url(
                         home_url("/contacto"),
-                    ); ?>">proyecto</a>.
+                    ); ?>" style="color: #15253e;">proyecto</a>.
                 </p>
 
                 <div class="pill-group mb-3">
