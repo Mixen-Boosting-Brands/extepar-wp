@@ -311,7 +311,7 @@
                 </p>
             </div>
         </div>
-        <div class="row" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1000">
+        <div class="row" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1200">
             <div class="col-12">
                 <div class="services-section__img-wrapper">
                     <!-- Imagen: tabla "Planeación de ejecución en campo" -->
