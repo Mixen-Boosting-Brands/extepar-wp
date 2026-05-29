@@ -1,9 +1,11 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-AOS.init({
-    once: true,
-    duration: 700,
-    easing: 'ease-out-cubic',
-    offset: 60,
+window.addEventListener('load', function () {
+    AOS.init({
+        once: true,
+        duration: 700,
+        easing: 'ease-out-cubic',
+        offset: 60,
+    });
 });
