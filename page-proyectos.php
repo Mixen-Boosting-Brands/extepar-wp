@@ -291,6 +291,14 @@ get_header(); ?>
                         <?php endif;
                         ?>
                         <h3 class="project-card__title"><?php the_title(); ?></h3>
+                        <?php
+                        $tipos = get_the_terms(get_the_ID(), "ubicacion");
+                        if ($tipos && !is_wp_error($tipos)): ?>
+                        <p class="project-card__text">
+                            <?php echo esc_html($tipos[0]->name); ?>
+                        </p>
+                        <?php endif;
+                        ?>
                         <p class="project-card__text">
                             <?php echo wp_trim_words(
                                 get_the_excerpt(),
