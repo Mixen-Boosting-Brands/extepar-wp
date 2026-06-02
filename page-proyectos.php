@@ -300,7 +300,7 @@ get_header(); ?>
                         <?php endif;
                         ?>
                         <p class="project-card__text">
-                            <?php the_excerpt(); ?>
+                            <?php the_content(); ?>
                         </p>
                         <!-- a href="<?php the_permalink(); ?>" class="project-card__link">
                             Ver proyecto
