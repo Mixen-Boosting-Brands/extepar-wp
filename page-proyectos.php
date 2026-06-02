@@ -300,16 +300,12 @@ get_header(); ?>
                         <?php endif;
                         ?>
                         <p class="project-card__text">
-                            <?php echo wp_trim_words(
-                                get_the_excerpt(),
-                                15,
-                                "…",
-                            ); ?>
+                            <?php the_excerpt(); ?>
                         </p>
-                        <a href="<?php the_permalink(); ?>" class="project-card__link">
+                        <!-- a href="<?php the_permalink(); ?>" class="project-card__link">
                             Ver proyecto
                             <i class="fas fa-arrow-right"></i>
-                        </a>
+                        </a -->
                     </div>
                 </div>
             </div>
