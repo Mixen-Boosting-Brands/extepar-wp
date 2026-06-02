@@ -419,7 +419,9 @@
                                 "…",
                             ); ?>
                         </p>
-                        <a href="<?php the_permalink(); ?>" class="project-card__link">
+                        <a href="<?php echo esc_url(
+                            home_url("/proyectos"),
+                        ); ?>" class="project-card__link">
                             Ver proyecto
                             <i class="fas fa-arrow-right"></i>
                         </a>
