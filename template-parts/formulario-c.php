@@ -105,7 +105,7 @@
                                 type="submit"
                                 class="btn btn-secondary rounded-pill"
                             >
-                                Solicitar evaluación técnica
+                                Enviar
                             </button>
                         </div>
 

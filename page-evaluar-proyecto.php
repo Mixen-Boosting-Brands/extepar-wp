@@ -29,7 +29,7 @@ get_header(); ?>
     </div>
 </section>
 
-<?php get_template_part("template-parts/formulario-c"); ?>
+<?php get_template_part("template-parts/formulario-b"); ?>
 
 <!-- ══════════════════════════════════════════════════════════
     PROYECTOS DONDE PODEMOS APORTAR VALOR
