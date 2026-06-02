@@ -299,9 +299,9 @@ get_header(); ?>
                         </p>
                         <?php endif;
                         ?>
-                        <p class="project-card__text">
+                        <div class="project-card__text">
                             <?php the_content(); ?>
-                        </p>
+                        </div>
                         <!-- a href="<?php the_permalink(); ?>" class="project-card__link">
                             Ver proyecto
                             <i class="fas fa-arrow-right"></i>
