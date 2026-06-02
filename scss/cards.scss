@@ -254,7 +254,8 @@
 
     &__text,
     .wp-block-paragraph {
-        @extend %card-body;
+        font-size: 1rem;
+        line-height: 1.65;
         color: $brand-text;
         margin-bottom: 1rem;
     }
