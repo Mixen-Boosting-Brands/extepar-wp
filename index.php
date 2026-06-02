@@ -28,7 +28,7 @@
                     Terracerías, plataformas y mejoramiento de suelos para proyectos, obras de infraestructura, ejecutados con seguimiento en campo y claridad en cada etapa.
                 </p>
                 <a
-                    href="<?php echo esc_url(home_url("/contacto")); ?>"
+                    href="<?php echo esc_url(home_url("/cv")); ?>"
                     class="btn btn-primary rounded-pill"
                     data-aos="fade-up"
                     data-aos-delay="160"
