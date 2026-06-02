@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Contacto
+Template Name: Contacto CV
 */
 get_header(); ?>
 
@@ -27,7 +27,7 @@ get_header(); ?>
     </div>
 </section>
 
-<?php get_template_part("template-parts/formulario-a"); ?>
+<?php get_template_part("template-parts/formulario-c"); ?>
 
 <!-- ══════════════════════════════════════════════════════════
     PROYECTOS DONDE PODEMOS APORTAR VALOR
