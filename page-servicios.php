@@ -145,7 +145,7 @@ get_header(); ?>
                             <strong>Base técnica del proyecto</strong>
                         </p>
                         <p class="project-card__text">
-                            Esta etapa, define la estabilidad del proyecto y previene que el cliente tome decisiones bajo presión durante el resto del proyecto.
+                            Esta etapa define la estabilidad del proyecto y previene que el cliente tome decisiones bajo presión durante el resto del proyecto.
                         </p>
                     </div>
                 </div>

@@ -52,7 +52,7 @@
                     <strong>define el resultado.</strong>
                 </h2>
                 <p class="section-split__lead">
-                    Extepar interviene en cada etapa critica evitando sorpresas.
+                    Extepar interviene en cada etapa crítica evitando sorpresas.
                 </p>
             </div>
             <div class="col-12">
@@ -76,7 +76,7 @@
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-shield"></i>
-                                    Sobre costos
+                                    Sobrecostos
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-shield"></i>
@@ -143,7 +143,7 @@
                     No solo ejecutamos, usamos un sistema de supervisión, validación y decisiones en campo, hacemos sencillo lo complejo, obras a la primera y sin sorpresas.
                 </p>
                 <p class="section-split__lead mb-4">
-                    Extepar mantiene transparencia constante sobre lo que lo que ocurre en obra, asegurando el control total de tu <a href="<?php echo esc_url(
+                    Extepar mantiene transparencia constante sobre lo que ocurre en obra, asegurando el control total de tu <a href="<?php echo esc_url(
                         home_url("/contacto"),
                     ); ?>" style="color: #15253e;">proyecto</a>.
                 </p>
@@ -307,7 +307,7 @@
                     en la necesidad de tu proyecto.
                 </h2>
                 <p class="services-section__sub">
-                    Servicios diseñados para asegurar una solida, precisa y confiable ejecución.
+                    Servicios diseñados para asegurar una sólida, precisa y confiable ejecución.
                 </p>
             </div>
         </div>

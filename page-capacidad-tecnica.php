@@ -40,7 +40,6 @@ get_header(); ?>
                     >
                 </p>
                 <a
-                <a
                     href="<?php echo esc_url(home_url("/evaluar-proyecto")); ?>"
                     class="btn btn-primary rounded-pill"
                     data-aos="fade-up"
