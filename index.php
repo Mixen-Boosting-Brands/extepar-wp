@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-12 col-lg-9">
                 <h1 class="hero__title" data-aos="fade-up">
-                    <strong>Control</strong> con<br />
+                    <strong>Control</strong> con
                     transparencia total en tu proyecto
                 </h1>
 
