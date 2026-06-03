@@ -20,7 +20,7 @@ get_header(); ?>
             <div class="col-12 col-lg-9">
                 <h1 class="hero__title" data-aos="fade-up">
                     Una forma clara de<br />
-                    <strong>ejecutar cada proyecto</strong>
+                    <strong>ejecutar sin sorpresas</strong>
                 </h1>
                 <p
                     class="hero__text"
@@ -327,7 +327,7 @@ get_header(); ?>
             <div class="col-12 text-center" data-aos="fade-up">
                 <h2 class="stats-banner__title">
                     <strong
-                        >Una ejecución más,
+                        >Una ejecución más
                         <span id="aniv"
                             >clara</span
                         ></strong

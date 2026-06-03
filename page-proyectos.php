@@ -27,11 +27,7 @@ get_header(); ?>
                     data-aos="fade-up"
                     data-aos-delay="80"
                 >
-                    Extepar participa en proyectos industriales y
-                    logísticos donde la preparación del terreno no es
-                    una etapa más, sino un punto crítico para asegurar
-                    tiempos, costos y continuidad.
-                </p>
+                    Extepar participa en proyectos industriales y logísticos donde una desviación en campo puede afectar tiempo, costo y continuidad.
                 <p
                     class="hero__text"
                     data-aos="fade-up"
@@ -120,8 +116,8 @@ get_header(); ?>
         <div class="row mb-4">
             <div class="col-12 col-lg-8" data-aos="fade-up">
                 <h2 class="audience-section__heading">
-                    Proyectos que exigen<br />
-                    <strong>precisión desde el inicio</strong>
+                    Capacidad aplicada a<br />
+                    <strong>proyectos de alta exigencia</strong>
                 </h2>
             </div>
         </div>

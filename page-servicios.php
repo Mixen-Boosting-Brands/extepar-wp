@@ -19,17 +19,15 @@ get_header(); ?>
         <div class="row">
             <div class="col-12 col-lg-9">
                 <h1 class="hero__title" data-aos="fade-up">
-                    <strong>Servicios</strong> enfocados<br />
-                    en el control de obra
+                    <strong>Servicios</strong> que controlan<br />
+                    las etapas críticas de tu obra
                 </h1>
                 <p
                     class="hero__text"
                     data-aos="fade-up"
                     data-aos-delay="80"
                 >
-                    Terracerías, plataformas y mejoramiento de suelos
-                    ejecutados con control real en campo para reducir
-                    incertidumbre desde el inicio.
+                    Terracerías, plataformas y mejoramiento de suelos ejecutados con validación técnica, seguimiento en campo y claridad para reducir riesgos desde el inicio.
                 </p>
                 <p
                     class="hero__text"
@@ -68,8 +66,7 @@ get_header(); ?>
                     <strong>el mismo valor</strong>
                 </h2>
                 <p class="section-split__lead">
-                    Extepar se enfoca en la etapa donde un error impacta
-                    todo el proyecto.
+                    Extepar se enfoca en etapas donde un error puede afectar tiempo, costo y continuidad.
                 </p>
                 <p class="section-split__lead">
                     La preparación del terreno, la formación de
@@ -109,7 +106,7 @@ get_header(); ?>
             <div class="col-12 col-lg-8" data-aos="fade-right">
                 <h2 class="projects-section__heading">
                     <strong>Servicios enfocados</strong><br />
-                    en la base del proyecto
+                    en controlar etapas críticas
                 </h2>
                 <p class="projects-section__sub">
                     Extepar interviene en la etapa donde la ejecución
@@ -298,9 +295,7 @@ get_header(); ?>
                     <strong>Está en cómo se ejecuta.</strong>
                 </h2>
                 <p class="section-split__lead">
-                    Extepar no compite por hacer más.<br />
-                    Compite por mantener el control donde normalmente se
-                    pierde.
+                    Extepar se diferencia donde la obra suele perder control: anticipa, valida y resuelve.
                 </p>
                 <p class="section-split__lead">
                     En una etapa donde un error impacta todo el

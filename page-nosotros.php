@@ -126,10 +126,10 @@ get_header(); ?>
             >
                 <div class="mb-3">
                     <a href="#" class="pill pill--yellow-2 mb-3 mb-lg-0"
-                        >La base del proyecto no admite improvisación</a
+                        >La ejecución no admite improvisación</a
                     >
                     <a href="#" class="pill pill--yellow"
-                        >La ejecución se valida en campo, no en papel</a
+                        >Lo avanzado en campo se valida con evidencia, no solo en papel</a
                     >
                 </div>
                 <div class="mb-3">
@@ -177,8 +177,7 @@ get_header(); ?>
                 </p>
                 <p class="section-split__lead">
                     Trabajar con Extepar implica mayor claridad durante
-                    la ejecución, menor desgaste operativo y una base
-                    mejor resuelta para lo que sigue.
+                    la ejecución, menor desgaste operativo y una etapa mejor controlada para lo que sigue.
                 </p>
             </div>
         </div>

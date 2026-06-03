@@ -12,9 +12,9 @@ get_header(); ?>
         <div class="row gy-4">
             <div class="col-12" data-aos="fade-right">
                 <h2 class="section-split__heading">
-                    <strong>Proyectos</strong> donde<br />
-                    podemos
-                    <strong class="text-accent">aportar valor</strong>
+                    <strong>Hablemos</strong> si tu obra<br />
+                    exige control, claridad y
+                    <strong class="text-accent">respuesta técnica</strong>
                 </h2>
                 <p class="section-split__lead">
                     Trabajamos principalmente en proyectos industriales

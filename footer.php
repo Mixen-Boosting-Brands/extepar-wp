@@ -30,9 +30,10 @@
                                 <li>
                                     <i class="fas fa-location-dot"></i>
                                     <address>
-                                        Av. Insurgentes 35<br />
-                                        Texcacoa, Tlacateco, 54605<br />
-                                        Tepoztlán, México
+                                        Calle San Francisco Javier No. 3<br />
+                                        Colonia Capula<br />
+                                        Tepoztlán, Estado de México<br />
+                                        C.P. 54603
                                     </address>
                                 </li>
                                 <li>

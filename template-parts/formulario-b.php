@@ -13,7 +13,7 @@
                     >
                         de tu proyecto
                         <span class="contact-section__lead mb-0"
-                            >Información para evaluación.</span
+                            >Comparte los datos clave para una primera revisión técnica.</span
                         >
                     </span>
                 </h2>
@@ -109,8 +109,7 @@
                             <label
                                 class="form-label"
                                 for="estudios-suelos"
-                                >¿Existen estudios de mecánica de
-                                suelos?</label
+                                >¿Cuentas con estudio de mecánica de suelos?</label
                             >
                             <input
                                 type="text"
