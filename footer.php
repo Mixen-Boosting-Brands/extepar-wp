@@ -76,15 +76,7 @@
                     data-aos-delay="150"
                 >
                     <!-- Map -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.0093991451818!2d-99.21478552310349!3d19.712223981627822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21f8aaaf07887%3A0xa01a8d9b2a0f5d91!2sAv.%20Insurgentes%2035%2C%20Texcacoa%2C%2054605%20Tepotzotl%C3%A1n%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1778270820824!5m2!1ses-419!2smx"
-                        width="100%"
-                        height="350"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.940269677277!2d-99.22971732310342!3d19.7151669816256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d220290d853f87%3A0x9622bf971eb63201!2sC.%20San%20Francisco%20Javier%203%2C%20Capula%2C%2054603%20Tepotzotl%C3%A1n%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1780512412857!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
