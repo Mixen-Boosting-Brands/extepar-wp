@@ -28,7 +28,7 @@
                     data-aos="fade-up"
                     data-aos-delay="160"
                 >
-                    Terracerías, plataformas y mejoramiento de suelos ejecutados con seguimiento en campo, validación técnica y claridad en cada etapa.
+                    Terracerías, plataformas y mejoramiento de suelos ejecutados con seguimiento en campo, validación técnica y claridad en cada etapa
                 </p>
                 <a
                     href="<?php echo esc_url(home_url("/cv")); ?>"
