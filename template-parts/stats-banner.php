@@ -26,8 +26,7 @@
                 <p class="stats-banner__text">
                     Extepar es una firma especializada en
                     infraestructura industrial, enfocada en<br />
-                    ejecutar la base del proyecto con disciplina,
-                    control técnico y claridad operativa.
+                    ejecutar etapas críticas con disciplina, control técnico y claridad operativa.
                 </p>
             </div>
         </div>

@@ -9,9 +9,7 @@
                     <strong>Hablemos</strong> de<br />tu proyecto
                 </h2>
                 <p class="contact-section__lead">
-                    Comparte la información inicial y evaluamos cómo
-                    ejecutar con menos riesgos, mejor control y mejores
-                    resultados desde la base.
+                    Comparte la información inicial y revisamos alcance, condiciones y riesgos para darte una primera lectura técnica.
                 </p>
             </div>
             <div

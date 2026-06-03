@@ -20,18 +20,21 @@
                     <strong>Control</strong> con<br />
                     transparencia total en tu proyecto
                 </h1>
+
+                <h1 class="hero__title" data-aos="fade-up" data-aos-delay="80">Obras a la primera, a tiempo y sin sorpresas.</h1>
+
                 <p
                     class="hero__text"
                     data-aos="fade-up"
-                    data-aos-delay="80"
+                    data-aos-delay="160"
                 >
-                    Terracerías, plataformas y mejoramiento de suelos para proyectos, obras de infraestructura, ejecutados con seguimiento en campo y claridad en cada etapa.
+                    Terracerías, plataformas y mejoramiento de suelos ejecutados con seguimiento en campo, validación técnica y claridad en cada etapa.
                 </p>
                 <a
                     href="<?php echo esc_url(home_url("/cv")); ?>"
                     class="btn btn-primary rounded-pill"
                     data-aos="fade-up"
-                    data-aos-delay="160"
+                    data-aos-delay="240"
                 >
                     Contáctanos ahora
                 </a>
@@ -48,11 +51,11 @@
         <div class="row gy-4">
             <div class="col-12" data-aos="fade-up">
                 <h2 class="section-split__heading">
-                    <strong>La base</strong> del proyecto<br />
-                    <strong>define el resultado.</strong>
+                    <strong>El control</strong> inicial<br />
+                    <strong>evita correciones.</strong>
                 </h2>
                 <p class="section-split__lead">
-                    Extepar interviene en cada etapa crítica evitando sorpresas.
+                    Extepar interviene en etapas críticas con seguimiento en campo para evitar sorpresas.
                 </p>
             </div>
             <div class="col-12">
@@ -140,10 +143,10 @@
                     por <strong>capacidad operativa.</strong>
                 </h2>
                 <p class="section-split__lead mb-4">
-                    No solo ejecutamos, usamos un sistema de supervisión, validación y decisiones en campo, hacemos sencillo lo complejo, obras a la primera y sin sorpresas.
+                    Usamos un sistema de supervisión, validación y decisiones en campo para hacer sencillo lo complejo y ejecutar a la primera, sin sorpresas.
                 </p>
                 <p class="section-split__lead mb-4">
-                    Extepar mantiene transparencia constante sobre lo que ocurre en obra, asegurando el control total de tu <a href="<?php echo esc_url(
+                    Extepar mantiene transparencia sobre lo que ocurre en obra para que el cliente sepa dónde está parado el <a href="<?php echo esc_url(
                         home_url("/contacto"),
                     ); ?>" style="color: #15253e;">proyecto</a>.
                 </p>
@@ -185,7 +188,7 @@
 </section>
 
 <!-- ══════════════════════════════════════════════════════════
-     UNA FORMA CLARA DE EJECUTAR CADA PROYECTO (PROCESS)
+     UNA FORMA CLARA DE EJECUTAR CADA PROYECTO (PROCESO)
 ═══════════════════════════════════════════════════════════ -->
 <section class="step-flow" id="proceso">
     <div class="container">
@@ -193,7 +196,7 @@
             <div class="col-12 col-lg-8" data-aos="fade-up">
                 <h2 class="step-flow__heading">
                     Una <strong>forma clara de</strong><br />
-                    <strong>ejecutar</strong> cada proyecto.
+                    <strong>ejecutar</strong> sin sorpresas.
                 </h2>
                 <p class="step-flow__sub">
                     Cada etapa está diseñada para mantener control y
@@ -286,8 +289,7 @@
                         Entrega
                     </h3>
                     <p class="step-card__text">
-                        Validación final de la base para garantizar que
-                        el proyecto inicia sin errores.
+                        Validación final de la etapa ejecutada para avanzar sin arrastrar errores.
                     </p>
                 </div>
             </div>
@@ -307,7 +309,7 @@
                     en la necesidad de tu proyecto.
                 </h2>
                 <p class="services-section__sub">
-                    Servicios diseñados para asegurar una sólida, precisa y confiable ejecución.
+                    Servicios diseñados para asegurar una ejecución sólida, precisa y confiable.
                 </p>
             </div>
         </div>
@@ -341,9 +343,7 @@
                     la <strong>precisión</strong> es crítica
                 </h2>
                 <p class="projects-section__sub">
-                    Cada proyecto tiene una historia logística y
-                    operativa donde la correcta ejecución de la base
-                    define el desempeño del proyecto.
+                    Cada proyecto tiene condiciones logísticas y operativas donde una desviación puede afectar tiempo, costo y continuidad.
                 </p>
             </div>
             <div
@@ -479,8 +479,7 @@
                         Industriales
                     </h3>
                     <p class="step-card__text">
-                        Protección del programa desde la base del
-                        proyecto.
+                        Protección del programa desde el control de obra.
                     </p>
                 </div>
             </div>
