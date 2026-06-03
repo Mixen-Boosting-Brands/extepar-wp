@@ -21,14 +21,14 @@
                     transparencia total en tu proyecto
                 </h1>
 
-                <h1 class="hero__title" data-aos="fade-up" data-aos-delay="80"><strong>Obras a la primera</strong>, a tiempo y sin sorpresas.</h1>
+                <h1 class="hero__title" data-aos="fade-up" data-aos-delay="80"><strong>Obras a la primera</strong>, a tiempo y sin sorpresas</h1>
 
                 <p
                     class="hero__text"
                     data-aos="fade-up"
                     data-aos-delay="160"
                 >
-                    Terracerías, plataformas y mejoramiento de suelos ejecutados con seguimiento en campo, validación técnica y claridad en cada etapa
+                    Terracerías, plataformas y mejoramiento de suelos ejecutados con seguimiento en campo, validación técnica y claridad en cada etapa.
                 </p>
                 <a
                     href="<?php echo esc_url(home_url("/cv")); ?>"
