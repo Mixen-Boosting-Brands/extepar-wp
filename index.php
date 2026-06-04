@@ -221,7 +221,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-auto d-none d-lg-flex align-items-center step-flow__arrow">
+            <div class="col-auto d-none d-lg-flex align-items-center step-flow__arrow" data-aos="fade-right" data-aos-delay="75" data-aos-duration="600">
                 <i class="fas fa-chevron-right"></i>
             </div>
             <div
@@ -240,7 +240,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-auto d-none d-lg-flex align-items-center step-flow__arrow">
+            <div class="col-auto d-none d-lg-flex align-items-center step-flow__arrow" data-aos="fade-right" data-aos-delay="225" data-aos-duration="600">
                 <i class="fas fa-chevron-right"></i>
             </div>
             <div
@@ -258,7 +258,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-auto d-none d-lg-flex align-items-center step-flow__arrow">
+            <div class="col-auto d-none d-lg-flex align-items-center step-flow__arrow" data-aos="fade-right" data-aos-delay="375" data-aos-duration="600">
                 <i class="fas fa-chevron-right"></i>
             </div>
             <div
@@ -277,7 +277,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-auto d-none d-lg-flex align-items-center step-flow__arrow">
+            <div class="col-auto d-none d-lg-flex align-items-center step-flow__arrow" data-aos="fade-right" data-aos-delay="525" data-aos-duration="600">
                 <i class="fas fa-chevron-right"></i>
             </div>
             <div
