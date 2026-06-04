@@ -215,7 +215,7 @@ get_header(); ?>
                 </div>
             </div>
             <div
-                class="col-12 col-md-4"
+                class="col-12 col-md-4 offset-md-2"
                 data-aos="fade-up"
                 data-aos-delay="0"
             >
