@@ -221,6 +221,9 @@
                     </p>
                 </div>
             </div>
+            <div class="col-auto d-none d-lg-flex align-items-center step-flow__arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
             <div
                 class="col-12 col-sm-6 col-lg">
                 <div class="step-card card--dark" data-aos="fade-right"
@@ -237,6 +240,9 @@
                     </p>
                 </div>
             </div>
+            <div class="col-auto d-none d-lg-flex align-items-center step-flow__arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
             <div
                 class="col-12 col-sm-6 col-lg">
                 <div class="step-card card--dark" data-aos="fade-right"
@@ -251,6 +257,9 @@
                         Operación con sistema y supervisión técnica constante en campo.
                     </p>
                 </div>
+            </div>
+            <div class="col-auto d-none d-lg-flex align-items-center step-flow__arrow">
+                <i class="fas fa-chevron-right"></i>
             </div>
             <div
                 class="col-12 col-sm-6 col-lg">
@@ -267,6 +276,9 @@
                         ajustes basados en condiciones reales.
                     </p>
                 </div>
+            </div>
+            <div class="col-auto d-none d-lg-flex align-items-center step-flow__arrow">
+                <i class="fas fa-chevron-right"></i>
             </div>
             <div
                 class="col-12 col-sm-6 col-lg">
