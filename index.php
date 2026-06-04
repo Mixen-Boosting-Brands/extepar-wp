@@ -206,11 +206,9 @@
         </div>
         <div class="row g-3">
             <div
-                class="col-12 col-sm-6 col-lg"
-                data-aos="fade-right"
-                data-aos-delay="0"
-            >
-                <div class="step-card card--dark">
+                class="col-12 col-sm-6 col-lg">
+                <div class="step-card card--dark" data-aos="fade-right"
+                data-aos-delay="0">
                     <div class="step-card__icon">
                         <i class="fas fa-magnifying-glass-chart"></i>
                     </div>
@@ -224,11 +222,9 @@
                 </div>
             </div>
             <div
-                class="col-12 col-sm-6 col-lg"
-                data-aos="fade-right"
-                data-aos-delay="60"
-            >
-                <div class="step-card card--dark">
+                class="col-12 col-sm-6 col-lg">
+                <div class="step-card card--dark" data-aos="fade-right"
+                data-aos-delay="60">
                     <div class="step-card__icon">
                         <i class="fas fa-layer-group"></i>
                     </div>
@@ -242,11 +238,9 @@
                 </div>
             </div>
             <div
-                class="col-12 col-sm-6 col-lg"
-                data-aos="fade-right"
-                data-aos-delay="120"
-            >
-                <div class="step-card card--dark">
+                class="col-12 col-sm-6 col-lg">
+                <div class="step-card card--dark" data-aos="fade-right"
+                data-aos-delay="120">
                     <div class="step-card__icon">
                         <i class="fas fa-gears"></i>
                     </div>
@@ -259,11 +253,9 @@
                 </div>
             </div>
             <div
-                class="col-12 col-sm-6 col-lg"
-                data-aos="fade-right"
-                data-aos-delay="180"
-            >
-                <div class="step-card card--dark">
+                class="col-12 col-sm-6 col-lg">
+                <div class="step-card card--dark" data-aos="fade-right"
+                data-aos-delay="180">
                     <div class="step-card__icon">
                         <i class="fa-solid fa-list-check"></i>
                     </div>
@@ -277,11 +269,9 @@
                 </div>
             </div>
             <div
-                class="col-12 col-sm-6 col-lg"
-                data-aos="fade-right"
-                data-aos-delay="240"
-            >
-                <div class="step-card card--dark">
+                class="col-12 col-sm-6 col-lg">
+                <div class="step-card card--dark" data-aos="fade-right"
+                data-aos-delay="240">
                     <div class="step-card__icon">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
