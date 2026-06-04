@@ -208,7 +208,7 @@
             <div
                 class="col-12 col-sm-6 col-lg">
                 <div class="step-card card--dark" data-aos="fade-right"
-                data-aos-delay="0">
+                data-aos-delay="0" data-aos-duration="600">
                     <div class="step-card__icon">
                         <i class="fas fa-magnifying-glass-chart"></i>
                     </div>
@@ -224,7 +224,7 @@
             <div
                 class="col-12 col-sm-6 col-lg">
                 <div class="step-card card--dark" data-aos="fade-right"
-                data-aos-delay="60">
+                data-aos-delay="150" data-aos-duration="600">
                     <div class="step-card__icon">
                         <i class="fas fa-layer-group"></i>
                     </div>
@@ -240,7 +240,7 @@
             <div
                 class="col-12 col-sm-6 col-lg">
                 <div class="step-card card--dark" data-aos="fade-right"
-                data-aos-delay="120">
+                data-aos-delay="300" data-aos-duration="600">
                     <div class="step-card__icon">
                         <i class="fas fa-gears"></i>
                     </div>
@@ -255,7 +255,7 @@
             <div
                 class="col-12 col-sm-6 col-lg">
                 <div class="step-card card--dark" data-aos="fade-right"
-                data-aos-delay="180">
+                data-aos-delay="450" data-aos-duration="600">
                     <div class="step-card__icon">
                         <i class="fa-solid fa-list-check"></i>
                     </div>
@@ -271,7 +271,7 @@
             <div
                 class="col-12 col-sm-6 col-lg">
                 <div class="step-card card--dark" data-aos="fade-right"
-                data-aos-delay="240">
+                data-aos-delay="600" data-aos-duration="600">
                     <div class="step-card__icon">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
