@@ -207,7 +207,7 @@
         <div class="row g-3">
             <div
                 class="col-12 col-sm-6 col-lg"
-                data-aos="fade-up"
+                data-aos="fade-right"
                 data-aos-delay="0"
             >
                 <div class="step-card card--dark">
@@ -225,7 +225,7 @@
             </div>
             <div
                 class="col-12 col-sm-6 col-lg"
-                data-aos="fade-up"
+                data-aos="fade-right"
                 data-aos-delay="60"
             >
                 <div class="step-card card--dark">
@@ -243,7 +243,7 @@
             </div>
             <div
                 class="col-12 col-sm-6 col-lg"
-                data-aos="fade-up"
+                data-aos="fade-right"
                 data-aos-delay="120"
             >
                 <div class="step-card card--dark">
@@ -260,7 +260,7 @@
             </div>
             <div
                 class="col-12 col-sm-6 col-lg"
-                data-aos="fade-up"
+                data-aos="fade-right"
                 data-aos-delay="180"
             >
                 <div class="step-card card--dark">
@@ -278,7 +278,7 @@
             </div>
             <div
                 class="col-12 col-sm-6 col-lg"
-                data-aos="fade-up"
+                data-aos="fade-right"
                 data-aos-delay="240"
             >
                 <div class="step-card card--dark">
