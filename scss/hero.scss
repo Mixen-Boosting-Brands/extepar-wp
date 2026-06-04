@@ -1,3 +1,8 @@
+@keyframes overlay-slide-in {
+    from { clip-path: inset(0 100% 0 0); }
+    to   { clip-path: inset(0 0% 0 0); }
+}
+
 .hero {
     position: relative;
     min-height: 100vh;
@@ -25,6 +30,7 @@
             rgba($brand-secondary, 0.92) 100%
         );
         z-index: 1;
+        animation: overlay-slide-in 0.6s ease-out forwards;
     }
 
     .container {
