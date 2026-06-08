@@ -305,11 +305,11 @@
         <div class="row mb-4">
             <div class="col-12 text-center" data-aos="fade-up">
                 <h2 class="services-section__heading">
-                    <strong>Servicios enfocados</strong><br />
-                    en la necesidad de tu proyecto.
+                    <strong>Extepar System</strong><br />
+                    Ejecución sin sorpresas.
                 </h2>
                 <p class="services-section__sub">
-                    Servicios diseñados para asegurar una ejecución sólida, precisa y confiable.
+                    Un sistema de trabajo basado en planear, coordinar, ejecutar y liberar cada etapa con compromisos claros, evidencia en campo y control real del avance.
                 </p>
             </div>
         </div>
