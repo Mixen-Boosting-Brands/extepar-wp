@@ -17,8 +17,7 @@
         <div class="row">
             <div class="col-12 col-lg-9">
                 <h1 class="hero__title" data-aos="fade-up">
-                    <strong>Control</strong> con
-                    transparencia total en tu proyecto. <strong>Obras a la primera</strong>, a tiempo y sin sorpresas.
+                    <strong>Obras a la primera</strong>, a tiempo y sin sorpresas.
                 </h1>
 
                 <p
@@ -26,7 +25,7 @@
                     data-aos="fade-up"
                     data-aos-delay="160"
                 >
-                    Terracerías, plataformas y mejoramiento de suelos ejecutados con seguimiento en campo, validación técnica y claridad en cada etapa.
+                    Con transparencia total, asegurando que el cliente mantenga siempre el control del proyecto.
                 </p>
                 <a
                     href="<?php echo esc_url(home_url("/cv")); ?>"
