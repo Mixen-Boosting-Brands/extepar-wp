@@ -109,8 +109,7 @@ get_header(); ?>
                     en controlar etapas críticas
                 </h2>
                 <p class="projects-section__sub">
-                    Extepar interviene en la etapa donde la ejecución
-                    define tiempos, costos y continuidad.
+                    Extepar interviene en las etapas donde la ejecución define tiempos, costos, desempeño y continuidad operativa.
                 </p>
             </div>
             <div
@@ -124,7 +123,7 @@ get_header(); ?>
         </div>
         <div class="row g-4">
             <div
-                class="col-12 col-md-4"
+                class="col-12 col-md-6"
                 data-aos="fade-up"
                 data-aos-delay="0"
             >
@@ -132,23 +131,23 @@ get_header(); ?>
                     <img
                         class="project-card__img"
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb-servicio-1.png"
-                        alt="Terracerías y movimiento de tierras"
+                        alt="Terracerías, movimiento de tierras, mejoramiento de suelos y estabilización"
                     />
                     <div class="project-card__body">
                         <h3 class="project-card__title">
-                            Terracerías y movimiento de tierras
+                            Terracerías, movimiento de tierras, mejoramiento de suelos y estabilización
                         </h3>
                         <p class="project-card__text">
-                            <strong>Base técnica del proyecto</strong>
+                            <strong>Control del terreno desde el origen</strong>
                         </p>
                         <p class="project-card__text">
-                            Esta etapa define la estabilidad del proyecto y previene que el cliente tome decisiones bajo presión durante el resto del proyecto.
+                            Integramos terracerías, movimiento de tierras, mejoramiento de suelos y estabilización bajo Extepar System, con planeación clara, control en campo, trazabilidad y transparencia en cada frente. Coordinamos accesos, secuencia constructiva, control de humedad, compactación y restricciones para dar orden a la ejecución desde el origen. Estos controles con transparencia reducen incertidumbre, evitan fallas futuras y dan continuidad operativa, permitiendo avanzar a la primera, a tiempo y sin sorpresas.
                         </p>
                     </div>
                 </div>
             </div>
             <div
-                class="col-12 col-md-4"
+                class="col-12 col-md-6"
                 data-aos="fade-up"
                 data-aos-delay="80"
             >
@@ -164,117 +163,72 @@ get_header(); ?>
                         </h3>
                         <p class="project-card__text">
                             <strong
-                                >Preparación precisa para
-                                ejecución</strong
+                                >Preparación controlada para construir con certeza</strong
                             >
                         </p>
                         <p class="project-card__text">
-                            Formación de plataformas listas para recibir
-                            construcción con niveles, pendientes y
-                            condiciones controladas.
+                            Desarrollamos plataformas industriales para naves, patios y áreas operativas con control de pendientes, compactación, drenaje y capacidad de soporte. Bajo Extepar System damos seguimiento a avances, liberaciones y restricciones con transparencia para que cada etapa quede clara antes de continuar.
                         </p>
                         <p class="project-card__text">
-                            Una ejecución correcta evita reprocesos y
-                            mantiene el avance del proyecto sin
-                            interrupciones.
+                            Una plataforma bien controlada evita reprocesos, fortalece el arranque de obra y genera condiciones confiables para construir y operar con mayor certidumbre, orden y continuidad.
                         </p>
                     </div>
                 </div>
             </div>
             <div
-                class="col-12 col-md-4"
+                class="col-12 col-md-6"
                 data-aos="fade-up"
                 data-aos-delay="160"
             >
                 <div class="project-card">
                     <img
                         class="project-card__img"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb-servicio-3.png"
-                        alt="Mejoramiento de suelos"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb-servicio-5.png"
+                        alt="Mantenimiento en parques logísticos e infraestructura urbana"
                     />
                     <div class="project-card__body">
                         <h3 class="project-card__title">
-                            Mejoramiento de suelos
+                            Mantenimiento en parques logísticos e infraestructura urbana
                         </h3>
                         <p class="project-card__text">
                             <strong
-                                >Condiciones estables desde el
-                                origen</strong
+                                >Intervenciones que protegen tu operación</strong
                             >
                         </p>
                         <p class="project-card__text">
-                            Intervención técnica para optimizar la
-                            capacidad del terreno y asegurar su
-                            desempeño.
+                            Atendemos vialidades, patios, accesos e infraestructura urbana con estrategia, diagnóstico y procesos constructivos pensados para operación continua. Cada intervención busca resolver la causa del deterioro y no solo el efecto visible, priorizando durabilidad, control de afectaciones, seguridad del usuario y transparencia durante la ejecución.
                         </p>
                         <p class="project-card__text">
-                            Permite trabajar sobre una base confiable y
-                            reducir incertidumbre durante la ejecución.
+                            El objetivo es reducir mantenimientos repetitivos, evitar nuevos paros en planta o circulación y conservar la infraestructura funcionando con mayor estabilidad y continuidad.
                         </p>
                     </div>
                 </div>
             </div>
             <div
-                class="col-12 col-md-4 offset-md-2"
+                class="col-12 col-md-6"
                 data-aos="fade-up"
-                data-aos-delay="0"
+                data-aos-delay="240"
             >
                 <div class="project-card">
                     <img
                         class="project-card__img"
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb-servicio-4.png"
-                        alt="Estabilización"
+                        alt="Pavimentos rígidos y flexibles"
                     />
                     <div class="project-card__body">
                         <h3 class="project-card__title">
-                            Estabilización
+                            Pavimentos rígidos y flexibles
                         </h3>
                         <p class="project-card__text">
                             <strong
-                                >Soporte estructural del terreno</strong
+                                >Diseño e ingeniería para alto desempeño</strong
                             >
                         </p>
                         <p class="project-card__text">
-                            Aplicación de soluciones para mantener
-                            consistencia y comportamiento adecuado del
-                            suelo.
+                            Desarrollamos soluciones integrales para pavimentos viales y pisos industriales enfocadas en optimizar el CAPEX y entregar un bajo LCC (Life Cycle Cost), sin comprometer desempeño ni durabilidad. En pavimentos rígidos diseñamos pisos industriales cortados y jointless, vialidades en losas de geometría optimizada y whitetopping adherido o no adherido, ya sea UTW, TW o WT, cuando el tramo lo permite, utilizando exclusivamente macrofibras sintéticas de uso estructural como refuerzo.
                         </p>
                         <p class="project-card__text">
-                            Evita fallas futuras y asegura continuidad
-                            en las siguientes etapas del proyecto.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="col-12 col-md-4"
-                data-aos="fade-up"
-                data-aos-delay="80"
-            >
-                <div class="project-card">
-                    <img
-                        class="project-card__img"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb-servicio-5.png"
-                        alt="Mantenimiento e infraestructura de parques logísticos"
-                    />
-                    <div class="project-card__body">
-                        <h3 class="project-card__title">
-                            Mantenimiento e infraestructura de parques logísticos
-                        </h3>
-                        <p class="project-card__text">
-                            <strong
-                                >Soporte para continuidad
-                                operativa</strong
-                            >
-                        </p>
-                        <p class="project-card__text">
-                            Servicios complementarios enfocados en
-                            mantener funcionalidad y operación sin
-                            afectar el desempeño del proyecto.
-                        </p>
-                        <p class="project-card__text">
-                            Intervenciones diseñadas para dar
-                            continuidad a la infraestructura ya en uso.
+                            También integramos soluciones asfálticas para estacionamientos, accesos y vialidades. Todas nuestras soluciones buscan optimizar recursos, reducir mantenimiento y disminuir la huella de carbono de su construcción.
                         </p>
                     </div>
                 </div>

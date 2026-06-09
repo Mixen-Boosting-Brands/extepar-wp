@@ -305,10 +305,10 @@
             <div class="col-12 text-center" data-aos="fade-up">
                 <h2 class="services-section__heading">
                     <strong>Extepar System</strong><br />
-                    Ejecución sin sorpresas.
+                    Ejecución sin sorpresas, con control real en campo.
                 </h2>
                 <p class="services-section__sub">
-                    Un sistema de trabajo basado en planear, coordinar, ejecutar y liberar cada etapa con compromisos claros, evidencia en campo y control real del avance.
+                    Un sistema de trabajo para planear, coordinar, ejecutar y liberar cada etapa con compromisos claros, control en campo y evidencia de avance.
                 </p>
             </div>
         </div>
