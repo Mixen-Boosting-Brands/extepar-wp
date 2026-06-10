@@ -47,7 +47,7 @@ get_header(); ?>
                     data-aos="fade-up"
                     data-aos-delay="160"
                 >
-                    Evaluar proyecto
+                    Hablemos de tu proyecto
                 </a>
             </div>
         </div>
