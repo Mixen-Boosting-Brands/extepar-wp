@@ -70,6 +70,24 @@
             @include font-size(1.4rem);
         }
 
+        .btn-nav-cta {
+            display: inline-block;
+            background: $brand-yellow;
+            color: $brand-dark;
+            font-weight: 700;
+            font-size: 0.85rem;
+            border-radius: 50px;
+            padding: 9px 20px;
+            text-decoration: none;
+            margin: 0 4px 8px;
+            @include transition(ease, 0.2s);
+
+            &:hover {
+                background: darken($brand-yellow, 8%);
+                color: $brand-dark;
+            }
+        }
+
         #btn-contacto {
             margin: 0 auto 30px;
         }
@@ -79,6 +97,8 @@
         }
 
         #contacto-menu {
+            margin-top: 24px;
+
             i {
                 color: $brand-yellow;
             }
