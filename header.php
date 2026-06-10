@@ -81,14 +81,16 @@
                         "fallback_cb" => false,
                     ]); ?>
                 </nav>
-                <?php wp_nav_menu([
-                    "theme_location" => "extra-menu",
-                    "container" => false,
-                    "items_wrap" => '%3$s',
-                    "depth" => 1,
-                    "fallback_cb" => false,
-                    "walker" => new Extepar_CTA_Mobile_Nav_Walker(),
-                ]); ?>
+                <div class="menu-cta-buttons">
+                    <?php wp_nav_menu([
+                        "theme_location" => "extra-menu",
+                        "container" => false,
+                        "items_wrap" => '%3$s',
+                        "depth" => 1,
+                        "fallback_cb" => false,
+                        "walker" => new Extepar_CTA_Mobile_Nav_Walker(),
+                    ]); ?>
+                </div>
                 <div id="contacto-menu">
                     <ul class="list-unstyled">
                         <li class="mb-3">
