@@ -65,12 +65,14 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 // Walker for Extra Menu: renders bare <a> tags with CTA classes (no ul/li)
 class Extepar_CTA_Nav_Walker extends Walker_Nav_Menu {
+    protected $link_class = 'btn-nav-cta d-none d-lg-inline-flex';
+
     public function start_lvl( &$output, $depth = 0, $args = null ) {}
     public function end_lvl( &$output, $depth = 0, $args = null ) {}
     public function start_el( &$output, $item, $depth = 0, $args = null, $id = 0 ) {
         $atts = [
             'href'   => ! empty( $item->url ) ? $item->url : '',
-            'class'  => 'btn-nav-cta d-none d-lg-inline-flex',
+            'class'  => $this->link_class,
             'target' => ! empty( $item->target ) ? $item->target : '',
         ];
         $atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args, $depth );
@@ -85,6 +87,11 @@ class Extepar_CTA_Nav_Walker extends Walker_Nav_Menu {
         $output .= '<a' . $attributes . '>' . $title . '</a>';
     }
     public function end_el( &$output, $item, $depth = 0, $args = null ) {}
+}
+
+// Variante móvil: misma estructura pero visible en todas las resoluciones
+class Extepar_CTA_Mobile_Nav_Walker extends Extepar_CTA_Nav_Walker {
+    protected $link_class = 'btn-nav-cta';
 }
 
 // HTML5 Blank navigation

@@ -81,14 +81,13 @@
                         "fallback_cb" => false,
                     ]); ?>
                 </nav>
-                TEST
                 <?php wp_nav_menu([
                     "theme_location" => "extra-menu",
                     "container" => false,
                     "items_wrap" => '%3$s',
                     "depth" => 1,
                     "fallback_cb" => false,
-                    "walker" => new Extepar_CTA_Nav_Walker(),
+                    "walker" => new Extepar_CTA_Mobile_Nav_Walker(),
                 ]); ?>
                 <div id="contacto-menu">
                     <ul class="list-unstyled">
