@@ -357,24 +357,27 @@
         </div>
         <?php
         $proyectos = new WP_Query([
-            "post_type" => "proyectos-extepar",
-            "posts_per_page" => 6,
-            "orderby" => "date",
-            "order" => "DESC",
-            "post_status" => "publish",
+            "post_type"           => "proyectos-extepar",
+            "posts_per_page"      => 6,
+            "orderby"             => "menu_order",
+            "order"               => "ASC",
+            "post_status"         => "publish",
+            "ignore_sticky_posts" => true,
         ]);
         $hay_mas = $proyectos->found_posts > 6;
         ?>
         <div class="row g-4">
             <?php if ($proyectos->have_posts()):
+                $total = count($proyectos->posts);
                 $i = 0;
                 while ($proyectos->have_posts()):
 
                     $proyectos->the_post();
                     $i++;
+                    $offset = ($total === 5 && $i === 4) ? ' offset-lg-2' : '';
                     ?>
             <div
-                class="col-12 col-md-4"
+                class="col-12 col-md-4<?php echo $offset; ?>"
                 data-aos="fade-up"
                 data-aos-delay="<?php echo $i % 3 === 1
                     ? 0
