@@ -13,14 +13,14 @@ get_header(); ?>
             <div class="col-12" data-aos="fade-right">
                 <h2 class="section-split__heading">
                     <strong>Personas</strong> que trabajan<br />
-                    con orden y
-                    <strong class="text-accent">responsabilidad</strong>
+                    con <strong class="text-accent">compromiso</strong> y
+                    disciplina
                 </h2>
                 <p class="section-split__lead">
-                    En EXTEPAR buscamos personas comprometidas, responsables y con buena actitud. Valoramos a quien sabe trabajar en equipo, aprende, comunica con claridad y cuida lo que hace.
+                    En EXTEPAR buscamos personas que entiendan que cada trabajo cuenta. Gente con sentido de urgencia, ética y disciplina; que cuide lo que hace, cumpla lo que promete y trabaje con orden, respeto y claridad.
                 </p>
                 <p class="section-split__lead">
-                    Cada puesto cuenta. En campo, oficina, operación o administración, el resultado se construye con orden, respeto y ganas de hacer bien las cosas.
+                    Valoramos a quienes suman al equipo, resuelven sin drama y actúan con transparencia, tanto en campo como en operación, administración o apoyo. Personas con ganas de hacer bien las cosas y de construir una empresa más confiable todos los días.
                 </p>
             </div>
         </div>

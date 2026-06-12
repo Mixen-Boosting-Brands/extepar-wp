@@ -82,18 +82,21 @@
 
                         <!-- Área o puesto de interés -->
                         <div class="col-12">
-                            <label
-                                class="form-label"
-                                for="area"
-                                >Área o puesto de interés</label
-                            >
-                            <input
-                                type="text"
-                                class="form-control"
+                            <label class="form-label" for="cargo">Área o puesto de interés</label>
+                            <select
+                                class="form-select"
                                 id="cargo"
                                 name="cargo"
                                 required
-                            />
+                            >
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="Campo y operación">Campo y operación</option>
+                                <option value="Administración y apoyo">Administración y apoyo</option>
+                                <option value="Supervisión, maquinaria y oficina de obra">Supervisión, maquinaria y oficina de obra</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Selecciona un área o puesto de interés.
+                            </div>
                         </div>
 
                         <!-- Adjuntar CV -->

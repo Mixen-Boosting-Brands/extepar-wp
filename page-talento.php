@@ -59,17 +59,15 @@ get_header(); ?>
         <div class="row gy-4">
             <div class="col-lg-7" data-aos="fade-right">
                 <h2 class="section-split__heading">
-                    <strong>Una operación</strong><br />
-                    que exige<br />
-                    <strong>ejecución real</strong>
+                    <strong>Una cultura</strong><br />
+                    basada en<br />
+                    <strong>orden y responsabilidad</strong>
                 </h2>
                 <p class="section-split__lead">
-                    Extepar no es una operación para perfiles genéricos.
+                    En EXTEPAR valoramos a la gente que trabaja con compromiso, claridad y buena actitud.
                 </p>
                 <p class="section-split__lead">
-                    Trabaja con equipos que pueden sostener la ejecución
-                    en campo, responder ante condiciones reales y
-                    mantener claridad en cada etapa del proyecto.
+                    Buscamos personas que sepan cumplir, aprender, comunicarse bien y cuidar su trabajo. Cada puesto cuenta cuando se trabaja con orden.
                 </p>
             </div>
             <div
@@ -81,15 +79,15 @@ get_header(); ?>
                     <ul>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Trabajo directo en campo
+                            Orden en el trabajo
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Seguimiento constante a la ejecución
+                            Responsabilidad en cada tarea
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Decisiones basadas en condiciones reales
+                            Comunicación clara y respetuosa
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
@@ -111,29 +109,29 @@ get_header(); ?>
         <div class="row gy-4">
             <div class="col-12 text-center" data-aos="fade-up">
                 <h2 class="section-split__heading">
-                    Lo que se espera y<br />
-                    <strong>lo que encuentras</strong>
+                    Lo que valoramos y<br />
+                    <strong>lo que puedes encontrar</strong>
                 </h2>
             </div>
             <div class="col-lg-6" data-aos="fade-right">
                 <div class="check-list card--yellow">
-                    <h3 class="check-list__label">Se espera:</h3>
+                    <h3 class="check-list__label">Valoramos:</h3>
                     <ul>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Disciplina operativa
+                            Responsabilidad para cumplir
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Claridad en la ejecución
+                            Orden para trabajar
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Responsabilidad sobre el trabajo
+                            Comunicación clara
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Capacidad de adaptación en obra
+                            Actitud para aprender y resolver
                         </li>
                     </ul>
                 </div>
@@ -144,15 +142,15 @@ get_header(); ?>
                     <ul>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Proyectos con exigencia real
+                            Un equipo con forma clara de trabajar
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Aprendizaje en campo
+                            Aprendizaje en el puesto
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Trabajo con impacto directo en ejecución
+                            Trabajo que aporta al resultado
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
@@ -187,24 +185,21 @@ get_header(); ?>
             <div class="col-lg-7" data-aos="fade-left">
                 <h2 class="section-split__heading">
                     <strong>Oportunidades</strong><br />
-                    en campo
+                    para crecer en EXTEPAR
                 </h2>
                 <p class="section-split__lead">
-                    Buscamos perfiles técnicos y operativos para
-                    proyectos industriales, con capacidad de trabajar en
-                    campo y sostener la ejecución en condiciones reales.
+                    Buscamos personas que quieran integrarse a una empresa donde el orden, la responsabilidad y la buena actitud se toman en serio. Hay espacio para perfiles de campo, operación, administración y apoyo general.
                 </p>
                 <p class="section-split__lead">
-                    <strong>Perfiles que buscamos:</strong>
+                    <strong>Áreas donde puedes aportar:</strong>
                 </p>
                 <ul class="section-split__lead">
-                    <li>Ingeniería de obra</li>
-                    <li>Supervisión de campo</li>
-                    <li>Operación técnica</li>
+                    <li>Campo y operación</li>
+                    <li>Administración y apoyo</li>
+                    <li>Supervisión, maquinaria y oficina de obra</li>
                 </ul>
                 <p class="section-split__lead">
-                    Comparte tu experiencia y evaluamos si existe un
-                    ajuste con el tipo de operación que manejamos.
+                    Comparte tu información y revisaremos en qué área podrías desarrollarte mejor dentro de EXTEPAR.
                 </p>
             </div>
         </div>
