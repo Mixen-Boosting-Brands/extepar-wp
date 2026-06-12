@@ -23,12 +23,13 @@
         <form
             id="form-contacto"
             class="needs-validation"
-            action="#"
+            action="<?php echo get_template_directory_uri(); ?>/mailer.php"
             method="POST"
             novalidate
             data-aos="fade-up"
             data-aos-delay="80"
         >
+            <input type="hidden" name="form_type" value="evaluacion">
             <div id="hold-on-a-sec"></div>
             <div id="respuesta"></div>
 

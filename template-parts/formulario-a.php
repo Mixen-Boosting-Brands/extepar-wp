@@ -24,6 +24,7 @@
                     method="POST"
                     novalidate
                 >
+                    <input type="hidden" name="form_type" value="proyecto">
                     <div id="hold-on-a-sec"></div>
                     <div id="respuesta"></div>
                     <div class="row g-3">

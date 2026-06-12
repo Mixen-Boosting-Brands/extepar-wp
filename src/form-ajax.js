@@ -1,91 +1,57 @@
-// Formulario + Validación
 'use strict';
-window.addEventListener('load', function () {
-    // Get the messages div.
-    var formMessages = $('#form-messages');
 
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+window.addEventListener('load', function () {
     var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function (form) {
+
+    Array.prototype.forEach.call(forms, function (form) {
         form.addEventListener('submit', function (event) {
-            if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
+            event.preventDefault();
+            event.stopPropagation();
+
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+                return;
             }
+
             form.classList.add('was-validated');
 
-            if (form.checkValidity() === true) {
-                event.preventDefault();
+            var $form     = $(form);
+            var $respuesta = $form.find('#respuesta');
+            var $spinner  = $form.find('#hold-on-a-sec');
 
-                // To reset the appearance of the form
-                form.classList.remove("was-validated");
-
-                // Submit the form using AJAX
-                $.ajax({
-                    type: $(form).attr('method'),
-                    url: $(form).attr('action'),
-                    data: new FormData(form),
-                    processData: false,
-                    contentType: false,
-                    beforeSend: function () {
-                        // Let's show a message to the user
-                        $('#hold-on-a-sec').addClass('is-loading');
-                    },
-                    success: function (response) {
-                        // Make sure that the formMessages div has the 'success' class.
-                        $(form).removeClass('was-validated');
-                        $(formMessages).removeClass('error');
-                        $(formMessages).addClass('success');
-
-                        // Set the message text.
-                        $(formMessages).text(response);
-                        console.log(response);
-
-                        setTimeout(function () {
-                            $(formMessages).remove();
-
-                            // Clear the form.
-                            $('#nombre').val('');
-                            $('#telefono').val('');
-                            $('#correo').val('');
-                            $('#ciudad').val('');
-                            $('#mensaje').val('');
-                        }, 5000);
-                    },
-                    error: function (response) {
-                        // Make sure that the formMessages div has the 'error' class.
-                        $('#hold-on-a-sec').removeClass('is-loading');
-                        $(formMessages).removeClass('success');
-                        $(formMessages).addClass('error');
-
-                        // Set the message text.
-                        $(formMessages).text(response);
-                        console.log(response);
-
-                        setTimeout(function () {
-                            $(formMessages).remove();
-
-                            // Clear the form.
-                            $('#nombre').val('');
-                            $('#telefono').val('');
-                            $('#correo').val('');
-                            $('#ciudad').val('');
-                            $('#mensaje').val('');
-                        }, 5000);
-
-                        // Set the message text.
-                        if (response.responseText !== '') {
-                            $(formMessages).text(response.responseText);
-                        } else {
-                            $(formMessages).text('We\'re so sorry, something went horribly wrong.');
-                        }
-                    },
-                    complete: function () {
-                        $('#hold-on-a-sec').removeClass('is-loading');
-                    }
-                });
-            }
+            $.ajax({
+                type: $form.attr('method'),
+                url: $form.attr('action'),
+                data: new FormData(form),
+                processData: false,
+                contentType: false,
+                beforeSend: function () {
+                    $spinner.addClass('is-loading');
+                    $respuesta.removeClass('success error').text('');
+                },
+                success: function (response) {
+                    form.classList.remove('was-validated');
+                    $respuesta.removeClass('error').addClass('success').text(response);
+                    form.reset();
+                    setTimeout(function () {
+                        $respuesta.fadeOut(400, function () {
+                            $(this).removeClass('success error').text('').show();
+                        });
+                    }, 5000);
+                },
+                error: function (xhr) {
+                    var msg = xhr.responseText || 'Lo sentimos, ocurrió un error. Intenta nuevamente.';
+                    $respuesta.removeClass('success').addClass('error').text(msg);
+                    setTimeout(function () {
+                        $respuesta.fadeOut(400, function () {
+                            $(this).removeClass('success error').text('').show();
+                        });
+                    }, 5000);
+                },
+                complete: function () {
+                    $spinner.removeClass('is-loading');
+                }
+            });
         }, false);
     });
 }, false);
