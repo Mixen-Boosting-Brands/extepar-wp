@@ -260,6 +260,10 @@
         margin-bottom: 1rem;
     }
 
+    &[data-images] {
+        cursor: pointer;
+    }
+
     &__link {
         @extend %card-body;
         font-weight: 600;
@@ -274,6 +278,38 @@
         &:hover {
             color: $brand-yellow;
         }
+    }
+}
+
+// ══════════════════════════════════════════════════════════════════════
+// MODAL CARRUSEL DE PROYECTO
+// ══════════════════════════════════════════════════════════════════════
+.modal-proyecto {
+    &__content {
+        background: $brand-dark;
+        border: none;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    &__title {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+}
+
+#carrusel-proyecto {
+    .carousel-inner {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .carousel-item img {
+        max-height: 72vh;
+        width: 100%;
+        object-fit: contain;
+        background: darken($brand-dark, 6%);
     }
 }
 

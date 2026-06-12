@@ -375,6 +375,20 @@
                     $proyectos->the_post();
                     $i++;
                     $offset = ($total === 5 && $i === 4) ? ' offset-lg-2' : '';
+
+                    // Extraer imágenes del post para el carrusel
+                    $images = [];
+                    if (has_post_thumbnail()) {
+                        $images[] = get_the_post_thumbnail_url(null, 'large');
+                    }
+                    preg_match_all('/<img[^>]+src=["\']([^"\']+)["\'][^>]*>/i', get_the_content(), $img_m);
+                    foreach (($img_m[1] ?? []) as $u) {
+                        if (!in_array($u, $images)) $images[] = $u;
+                    }
+                    $has_imgs  = !empty($images);
+                    $card_data = $has_imgs
+                        ? ' data-images="' . esc_attr(json_encode(array_values($images))) . '" data-title="' . esc_attr(get_the_title()) . '"'
+                        : '';
                     ?>
             <div
                 class="col-12 col-md-4<?php echo $offset; ?>"
@@ -385,7 +399,7 @@
                         ? 80
                         : 160); ?>"
             >
-                <div class="project-card">
+                <div class="project-card"<?php echo $card_data; ?>>
                     <?php if (has_post_thumbnail()): ?>
                     <img
                         class="project-card__img"
@@ -420,12 +434,15 @@
                                 "…",
                             ); ?>
                         </p>
-                        <a href="<?php echo esc_url(
-                            home_url("/proyectos"),
-                        ); ?>/#proyectos" class="project-card__link">
-                            Ver proyecto
-                            <i class="fas fa-arrow-right"></i>
+                        <?php if ($has_imgs): ?>
+                        <span class="project-card__link">
+                            Ver fotos <i class="fas fa-images"></i>
+                        </span>
+                        <?php else: ?>
+                        <a href="<?php echo esc_url(home_url('/proyectos')); ?>/#proyectos" class="project-card__link">
+                            Ver proyecto <i class="fas fa-arrow-right"></i>
                         </a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -532,5 +549,7 @@
 <?php get_template_part("template-parts/stats-banner"); ?>
 
 <?php get_template_part("template-parts/formulario-a"); ?>
+
+<?php get_template_part("template-parts/modal-proyecto"); ?>
 
 <?php get_footer(); ?>
