@@ -19,17 +19,15 @@ get_header(); ?>
         <div class="row">
             <div class="col-12 col-lg-9">
                 <h1 class="hero__title" data-aos="fade-up">
-                    Una operación donde<br />
-                    <strong>la ejecución sí importa</strong>
+                    Personas que trabajan con<br />
+                    <strong>orden y <span class="text-accent">responsabilidad</span></strong>
                 </h1>
                 <p
                     class="hero__text"
                     data-aos="fade-up"
                     data-aos-delay="80"
                 >
-                    Extepar trabaja con equipos técnicos y operativos
-                    que ejecutan en campo con disciplina, seguimiento y
-                    criterio en proyectos industriales.
+                    En EXTEPAR buscamos personas comprometidas, responsables y con buena actitud. Gente que sepa trabajar en equipo, aprender, comunicar con claridad y cuidar lo que hace.
                 </p>
                 <p
                     class="hero__text"
@@ -37,8 +35,7 @@ get_header(); ?>
                     data-aos-delay="100"
                 >
                     <small
-                        >Trabajo en campo | Exigencia real | Enfoque en
-                        ejecución</small
+                        >Orden | Responsabilidad | Trabajo en equipo</small
                     >
                 </p>
                 <a
@@ -47,7 +44,7 @@ get_header(); ?>
                     data-aos="fade-up"
                     data-aos-delay="160"
                 >
-                    Hablemos de tu proyecto
+                    Enviar mi CV
                 </a>
             </div>
         </div>
