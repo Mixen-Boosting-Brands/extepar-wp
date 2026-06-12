@@ -12,15 +12,15 @@ get_header(); ?>
         <div class="row gy-4">
             <div class="col-12" data-aos="fade-right">
                 <h2 class="section-split__heading">
-                    <strong>Proyectos</strong> donde<br />
-                    podemos
-                    <strong class="text-accent">aportar valor</strong>
+                    <strong>Personas</strong> que trabajan<br />
+                    con orden y
+                    <strong class="text-accent">responsabilidad</strong>
                 </h2>
                 <p class="section-split__lead">
-                    Trabajamos principalmente en proyectos industriales
-                    y logísticos donde la preparación del terreno, las
-                    plataformas y la infraestructura base requieren
-                    precisión, seguimiento y ejecución estructurada.
+                    En EXTEPAR buscamos personas comprometidas, responsables y con buena actitud. Valoramos a quien sabe trabajar en equipo, aprende, comunica con claridad y cuida lo que hace.
+                </p>
+                <p class="section-split__lead">
+                    Cada puesto cuenta. En campo, oficina, operación o administración, el resultado se construye con orden, respeto y ganas de hacer bien las cosas.
                 </p>
             </div>
         </div>
@@ -37,10 +37,7 @@ get_header(); ?>
         <div class="row gy-4">
             <div class="col-12 text-center" data-aos="fade-right">
                 <p class="section-split__lead mb-0">
-                    Cada solicitud es revisada por el equipo técnico
-                    para entender el proyecto y<br />
-                    responder con claridad sobre el alcance, condiciones
-                    y viabilidad de ejecución.
+                    Agradecemos tu interés en formar parte de EXTEPAR. Revisaremos tu información para conocer tu perfil, experiencia y el área donde podrías desarrollarte mejor.
                 </p>
             </div>
         </div>

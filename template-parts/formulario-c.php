@@ -7,13 +7,13 @@
         <div class="row mb-5" data-aos="fade-right">
             <div class="col-12">
                 <h2 class="contact-section__heading mb-0">
-                    <strong>Hablemos</strong><br />
+                    <strong>Queremos</strong><br />
                     <span
                         class="d-flex align-items-baseline gap-3 flex-wrap"
                     >
-                        de tu proyecto
+                        conocerte
                         <span class="contact-section__lead mb-0"
-                            >Información para evaluación.</span
+                            >Comparte tu información y adjunta tu CV.</span
                         >
                     </span>
                 </h2>
@@ -54,7 +54,7 @@
 
                         <!-- Correo + Teléfono -->
                         <div class="col-12 col-sm-6">
-                            <label class="form-label" for="correo">Correo</label>
+                            <label class="form-label" for="correo">Correo electrónico</label>
                             <input
                                 type="email"
                                 class="form-control"
@@ -80,9 +80,26 @@
                             </div>
                         </div>
 
+                        <!-- Área o puesto de interés -->
+                        <div class="col-12">
+                            <label
+                                class="form-label"
+                                for="area"
+                                >Área o puesto de interés</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="cargo"
+                                name="cargo"
+                                placeholder="Introduce el área o el puesto de tu interés"
+                                required
+                            />
+                        </div>
+
                         <!-- Adjuntar CV -->
                         <div class="col-12">
-                            <label class="form-label" for="cv">Adjuntar CV</label>
+                            <label class="form-label" for="cv">Adjunta tu CV</label>
                             <input
                                 type="file"
                                 class="form-control"
@@ -92,7 +109,7 @@
                                 required
                             />
                             <div class="form-text">
-                                Formatos aceptados: PDF, Word (.doc, .docx), JPG, PNG.
+                                Formatos aceptados: PDF, Word, JPG o PNG.
                             </div>
                             <div class="invalid-feedback">
                                 Adjunta tu CV para continuar.
@@ -105,7 +122,7 @@
                                 type="submit"
                                 class="btn btn-secondary rounded-pill"
                             >
-                                Enviar
+                                Enviar CV
                             </button>
                         </div>
 
