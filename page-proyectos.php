@@ -234,17 +234,18 @@ get_header(); ?>
         </div>
         <?php
         $proyectos = new WP_Query([
-            "post_type" => "proyectos-extepar",
-            "posts_per_page" => 6,
-            "orderby" => "date",
-            "order" => "DESC",
-            "post_status" => "publish",
+            "post_type"           => "proyectos-extepar",
+            "posts_per_page"      => 6,
+            "orderby"             => "menu_order",
+            "order"               => "ASC",
+            "post_status"         => "publish",
+            "ignore_sticky_posts" => true,
         ]);
         $hay_mas = $proyectos->found_posts > 6;
         ?>
         <div class="row g-4">
             <?php if ($proyectos->have_posts()):
-                $total = $proyectos->post_count;
+                $total = count($proyectos->posts);
                 $i = 0;
                 while ($proyectos->have_posts()):
 
