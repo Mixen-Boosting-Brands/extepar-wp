@@ -61,13 +61,13 @@ get_header(); ?>
                 <h2 class="section-split__heading">
                     <strong>Una cultura</strong><br />
                     basada en<br />
-                    <strong>orden y responsabilidad</strong>
+                    <strong>transparencia y compromiso</strong>
                 </h2>
                 <p class="section-split__lead">
-                    En EXTEPAR valoramos a la gente que trabaja con compromiso, claridad y buena actitud.
+                    En EXTEPAR valoramos a la gente que trabaja con sentido de urgencia, compromiso, ética y disciplina.
                 </p>
                 <p class="section-split__lead">
-                    Buscamos personas que sepan cumplir, aprender, comunicarse bien y cuidar su trabajo. Cada puesto cuenta cuando se trabaja con orden.
+                    Buscamos personas que sepan cumplir, aprender, comunicarse con claridad y actuar con transparencia cuando se necesita. Cada puesto cuenta cuando se trabaja con orden.
                 </p>
             </div>
             <div
@@ -83,7 +83,7 @@ get_header(); ?>
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Responsabilidad en cada tarea
+                            Compromiso en cada tarea
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
@@ -91,8 +91,7 @@ get_header(); ?>
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Coordinación con equipos técnicos y
-                            operativos
+                            Sentido de urgencia para resolver
                         </li>
                     </ul>
                 </div>
@@ -154,7 +153,7 @@ get_header(); ?>
                         </li>
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
-                            Equipos enfocados en resultado
+                            Equipos que trabajan con orden y respeto
                         </li>
                     </ul>
                 </div>
