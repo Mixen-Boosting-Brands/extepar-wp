@@ -299,7 +299,7 @@
 <!-- ══════════════════════════════════════════════════════════
      SERVICIOS ENFOCADOS EN LA BASE DEL PROYECTO
 ═══════════════════════════════════════════════════════════ -->
-<section class="services-section" id="servicios">
+<!-- section class="services-section" id="servicios">
     <div class="container">
         <div class="row mb-4">
             <div class="col-12 text-center" data-aos="fade-up">
@@ -315,7 +315,6 @@
         <div class="row" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1200">
             <div class="col-12">
                 <div class="services-section__img-wrapper">
-                    <!-- Imagen: tabla "Planeación de ejecución en campo" -->
                     <img
                         src="<?php echo esc_url(
                             get_template_directory_uri(),
@@ -326,7 +325,7 @@
             </div>
         </div>
     </div>
-</section>
+</section -->
 
 <?php get_template_part("template-parts/control-banner"); ?>
 
