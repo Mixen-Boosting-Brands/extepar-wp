@@ -37,7 +37,8 @@ get_header(); ?>
         <div class="row gy-4">
             <div class="col-12 text-center" data-aos="fade-right">
                 <p class="section-split__lead mb-0">
-                    Agradecemos tu interés en formar parte de EXTEPAR. Revisaremos tu información para conocer tu perfil, experiencia y el área donde podrías desarrollarte mejor.
+                    Agradecemos tu interés en formar parte de EXTEPAR.<br>
+                    Revisaremos tu información para conocer tu perfil, experiencia y el área donde podrías desarrollarte mejor.
                 </p>
             </div>
         </div>
