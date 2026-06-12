@@ -256,10 +256,11 @@ get_header(); ?>
                     // Extraer imágenes del post para el carrusel
                     $images = [];
                     if (has_post_thumbnail()) {
-                        $images[] = get_the_post_thumbnail_url(null, 'large');
+                        $images[] = get_the_post_thumbnail_url(null, 'full');
                     }
                     preg_match_all('/<img[^>]+src=["\']([^"\']+)["\'][^>]*>/i', get_the_content(), $img_m);
                     foreach (($img_m[1] ?? []) as $u) {
+                        $u = preg_replace('/-\d+x\d+(\.[a-zA-Z]+)$/', '$1', $u);
                         if (!in_array($u, $images)) $images[] = $u;
                     }
                     $card_data = !empty($images)
