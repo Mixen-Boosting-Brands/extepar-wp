@@ -92,7 +92,6 @@
                                 class="form-control"
                                 id="cargo"
                                 name="cargo"
-                                placeholder="Introduce el área o el puesto de tu interés"
                                 required
                             />
                         </div>
