@@ -244,14 +244,16 @@ get_header(); ?>
         ?>
         <div class="row g-4">
             <?php if ($proyectos->have_posts()):
+                $total = $proyectos->post_count;
                 $i = 0;
                 while ($proyectos->have_posts()):
 
                     $proyectos->the_post();
                     $i++;
+                    $offset = ($total === 5 && $i === 4) ? ' offset-lg-2' : '';
                     ?>
             <div
-                class="col-12 col-md-4"
+                class="col-12 col-md-4<?php echo $offset; ?>"
                 data-aos="fade-up"
                 data-aos-delay="<?php echo $i % 3 === 1
                     ? 0
