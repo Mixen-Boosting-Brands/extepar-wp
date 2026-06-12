@@ -312,7 +312,12 @@ get_header(); ?>
                         <?php endif;
                         ?>
                         <div class="project-card__text">
-                            <?php the_content(); ?>
+                            <?php
+                            $content = apply_filters('the_content', get_the_content());
+                            $content = preg_replace('/<figure\b[^>]*>.*?<\/figure>/si', '', $content);
+                            $content = preg_replace('/<img[^>]+>/i', '', $content);
+                            echo wp_kses_post($content);
+                            ?>
                         </div>
                         <!-- a href="<?php the_permalink(); ?>" class="project-card__link">
                             Ver proyecto
