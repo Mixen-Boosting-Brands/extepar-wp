@@ -10,7 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var indicators    = modalEl.querySelector('.carousel-indicators');
 
     document.addEventListener('click', function (e) {
-        var card = e.target.closest('.project-card[data-images]');
+        var trigger = e.target.closest('.project-card__expand');
+        if (!trigger) return;
+
+        var card = trigger.closest('.project-card[data-images]');
         if (!card) return;
 
         var images = [];

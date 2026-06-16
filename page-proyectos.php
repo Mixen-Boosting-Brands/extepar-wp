@@ -277,23 +277,82 @@ get_header(); ?>
                         : 160); ?>"
             >
                 <div class="project-card"<?php echo $card_data; ?>>
-                    <?php if (has_post_thumbnail()): ?>
-                    <img
-                        class="project-card__img"
-                        src="<?php echo esc_url(
-                            get_the_post_thumbnail_url(null, "medium_large"),
-                        ); ?>"
-                        alt="<?php the_title_attribute(); ?>"
-                    />
-                    <?php else: ?>
-                    <img
-                        class="project-card__img"
-                        src="<?php echo esc_url(
-                            get_template_directory_uri(),
-                        ); ?>/assets/images/proyecto-1.jpg"
-                        alt="<?php the_title_attribute(); ?>"
-                    />
-                    <?php endif; ?>
+                    <div class="project-card__media">
+                        <?php if (count($images) > 1):
+                            $slider_id = "proyecto-slider-" . get_the_ID();
+                            ?>
+                        <div
+                            id="<?php echo esc_attr($slider_id); ?>"
+                            class="carousel slide project-card__carousel"
+                            data-bs-ride="false"
+                        >
+                            <div class="carousel-inner">
+                                <?php foreach ($images as $idx => $img_url): ?>
+                                <div class="carousel-item<?php echo $idx === 0 ? " active" : ""; ?>">
+                                    <img
+                                        class="project-card__img"
+                                        src="<?php echo esc_url($img_url); ?>"
+                                        alt="<?php the_title_attribute(); ?>"
+                                    />
+                                </div>
+                                <?php endforeach; ?>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#<?php echo esc_attr($slider_id); ?>"
+                                data-bs-slide="prev"
+                            >
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#<?php echo esc_attr($slider_id); ?>"
+                                data-bs-slide="next"
+                            >
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <?php foreach ($images as $idx => $img_url): ?>
+                                <button
+                                    type="button"
+                                    data-bs-target="#<?php echo esc_attr($slider_id); ?>"
+                                    data-bs-slide-to="<?php echo $idx; ?>"
+                                    <?php echo $idx === 0 ? 'class="active" aria-current="true"' : ""; ?>
+                                    aria-label="Foto <?php echo $idx + 1; ?>"
+                                ></button>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                        <?php elseif (!empty($images)): ?>
+                        <img
+                            class="project-card__img"
+                            src="<?php echo esc_url($images[0]); ?>"
+                            alt="<?php the_title_attribute(); ?>"
+                        />
+                        <?php else: ?>
+                        <img
+                            class="project-card__img"
+                            src="<?php echo esc_url(
+                                get_template_directory_uri(),
+                            ); ?>/assets/images/proyecto-1.jpg"
+                            alt="<?php the_title_attribute(); ?>"
+                        />
+                        <?php endif; ?>
+
+                        <?php if (!empty($images)): ?>
+                        <button
+                            type="button"
+                            class="project-card__expand"
+                            aria-label="Ver galería en grande"
+                        >
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                        <?php endif; ?>
+                    </div>
                     <div class="project-card__body">
                         <?php
                         $tipos = get_the_terms(get_the_ID(), "tipo-proyecto");
