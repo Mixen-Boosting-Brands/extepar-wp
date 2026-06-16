@@ -328,6 +328,8 @@
         line-height: 1.65;
         color: $brand-text;
         margin-bottom: 1rem;
+        text-align: justify;
+        hyphens: auto;
     }
 
     &__link {
