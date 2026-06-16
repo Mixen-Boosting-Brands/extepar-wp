@@ -100,7 +100,7 @@ get_header(); ?>
                     <img
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/thumb-proyectos.png"
                         alt=""
-                        class="img-fluid"
+                        class="img-fluid rounded-5"
                     />
                 </figure>
             </div>
@@ -234,11 +234,11 @@ get_header(); ?>
         </div>
         <?php
         $proyectos = new WP_Query([
-            "post_type"           => "proyectos-extepar",
-            "posts_per_page"      => 6,
-            "orderby"             => "menu_order",
-            "order"               => "ASC",
-            "post_status"         => "publish",
+            "post_type" => "proyectos-extepar",
+            "posts_per_page" => 6,
+            "orderby" => "menu_order",
+            "order" => "ASC",
+            "post_status" => "publish",
             "ignore_sticky_posts" => true,
         ]);
         $hay_mas = $proyectos->found_posts > 6;
@@ -251,21 +251,31 @@ get_header(); ?>
 
                     $proyectos->the_post();
                     $i++;
-                    $offset = ($total === 5 && $i === 4) ? ' offset-lg-2' : '';
+                    $offset = $total === 5 && $i === 4 ? " offset-lg-2" : "";
 
                     // Extraer imágenes del post para el carrusel
                     $images = [];
                     if (has_post_thumbnail()) {
-                        $images[] = get_the_post_thumbnail_url(null, 'full');
+                        $images[] = get_the_post_thumbnail_url(null, "full");
                     }
-                    preg_match_all('/<img[^>]+src=["\']([^"\']+)["\'][^>]*>/i', get_the_content(), $img_m);
-                    foreach (($img_m[1] ?? []) as $u) {
+                    preg_match_all(
+                        '/<img[^>]+src=["\']([^"\']+)["\'][^>]*>/i',
+                        get_the_content(),
+                        $img_m,
+                    );
+                    foreach ($img_m[1] ?? [] as $u) {
                         $u = preg_replace('/-\d+x\d+(\.[a-zA-Z]+)$/', '$1', $u);
-                        if (!in_array($u, $images)) $images[] = $u;
+                        if (!in_array($u, $images)) {
+                            $images[] = $u;
+                        }
                     }
                     $card_data = !empty($images)
-                        ? ' data-images="' . esc_attr(json_encode(array_values($images))) . '" data-title="' . esc_attr(get_the_title()) . '"'
-                        : '';
+                        ? ' data-images="' .
+                            esc_attr(json_encode(array_values($images))) .
+                            '" data-title="' .
+                            esc_attr(get_the_title()) .
+                            '"'
+                        : "";
                     ?>
             <div
                 class="col-12 col-md-4<?php echo $offset; ?>"
@@ -279,8 +289,7 @@ get_header(); ?>
                 <div class="project-card"<?php echo $card_data; ?>>
                     <div class="project-card__media">
                         <?php if (count($images) > 1):
-                            $slider_id = "proyecto-slider-" . get_the_ID();
-                            ?>
+                            $slider_id = "proyecto-slider-" . get_the_ID(); ?>
                         <div
                             id="<?php echo esc_attr($slider_id); ?>"
                             class="carousel slide project-card__carousel"
@@ -288,7 +297,9 @@ get_header(); ?>
                         >
                             <div class="carousel-inner">
                                 <?php foreach ($images as $idx => $img_url): ?>
-                                <div class="carousel-item<?php echo $idx === 0 ? " active" : ""; ?>">
+                                <div class="carousel-item<?php echo $idx === 0
+                                    ? " active"
+                                    : ""; ?>">
                                     <img
                                         class="project-card__img"
                                         src="<?php echo esc_url($img_url); ?>"
@@ -300,7 +311,9 @@ get_header(); ?>
                             <button
                                 class="carousel-control-prev"
                                 type="button"
-                                data-bs-target="#<?php echo esc_attr($slider_id); ?>"
+                                data-bs-target="#<?php echo esc_attr(
+                                    $slider_id,
+                                ); ?>"
                                 data-bs-slide="prev"
                             >
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -309,7 +322,9 @@ get_header(); ?>
                             <button
                                 class="carousel-control-next"
                                 type="button"
-                                data-bs-target="#<?php echo esc_attr($slider_id); ?>"
+                                data-bs-target="#<?php echo esc_attr(
+                                    $slider_id,
+                                ); ?>"
                                 data-bs-slide="next"
                             >
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -319,15 +334,20 @@ get_header(); ?>
                                 <?php foreach ($images as $idx => $img_url): ?>
                                 <button
                                     type="button"
-                                    data-bs-target="#<?php echo esc_attr($slider_id); ?>"
+                                    data-bs-target="#<?php echo esc_attr(
+                                        $slider_id,
+                                    ); ?>"
                                     data-bs-slide-to="<?php echo $idx; ?>"
-                                    <?php echo $idx === 0 ? 'class="active" aria-current="true"' : ""; ?>
+                                    <?php echo $idx === 0
+                                        ? 'class="active" aria-current="true"'
+                                        : ""; ?>
                                     aria-label="Foto <?php echo $idx + 1; ?>"
                                 ></button>
                                 <?php endforeach; ?>
                             </div>
                         </div>
-                        <?php elseif (!empty($images)): ?>
+                        <?php
+                        elseif (!empty($images)): ?>
                         <img
                             class="project-card__img"
                             src="<?php echo esc_url($images[0]); ?>"
@@ -373,9 +393,20 @@ get_header(); ?>
                         ?>
                         <div class="project-card__text">
                             <?php
-                            $content = apply_filters('the_content', get_the_content());
-                            $content = preg_replace('/<figure\b[^>]*>.*?<\/figure>/si', '', $content);
-                            $content = preg_replace('/<img[^>]+>/i', '', $content);
+                            $content = apply_filters(
+                                "the_content",
+                                get_the_content(),
+                            );
+                            $content = preg_replace(
+                                "/<figure\b[^>]*>.*?<\/figure>/si",
+                                "",
+                                $content,
+                            );
+                            $content = preg_replace(
+                                "/<img[^>]+>/i",
+                                "",
+                                $content,
+                            );
                             echo wp_kses_post($content);
                             ?>
                         </div>
