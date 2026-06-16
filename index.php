@@ -357,11 +357,11 @@
         </div>
         <?php
         $proyectos = new WP_Query([
-            "post_type"           => "proyectos-extepar",
-            "posts_per_page"      => 6,
-            "orderby"             => "menu_order",
-            "order"               => "ASC",
-            "post_status"         => "publish",
+            "post_type" => "proyectos-extepar",
+            "posts_per_page" => 6,
+            "orderby" => "menu_order",
+            "order" => "ASC",
+            "post_status" => "publish",
             "ignore_sticky_posts" => true,
         ]);
         $hay_mas = $proyectos->found_posts > 6;
@@ -374,22 +374,32 @@
 
                     $proyectos->the_post();
                     $i++;
-                    $offset = ($total === 5 && $i === 4) ? ' offset-lg-2' : '';
+                    $offset = $total === 5 && $i === 4 ? " offset-lg-2" : "";
 
                     // Extraer imágenes del post para el carrusel
                     $images = [];
                     if (has_post_thumbnail()) {
-                        $images[] = get_the_post_thumbnail_url(null, 'full');
+                        $images[] = get_the_post_thumbnail_url(null, "full");
                     }
-                    preg_match_all('/<img[^>]+src=["\']([^"\']+)["\'][^>]*>/i', get_the_content(), $img_m);
-                    foreach (($img_m[1] ?? []) as $u) {
+                    preg_match_all(
+                        '/<img[^>]+src=["\']([^"\']+)["\'][^>]*>/i',
+                        get_the_content(),
+                        $img_m,
+                    );
+                    foreach ($img_m[1] ?? [] as $u) {
                         $u = preg_replace('/-\d+x\d+(\.[a-zA-Z]+)$/', '$1', $u);
-                        if (!in_array($u, $images)) $images[] = $u;
+                        if (!in_array($u, $images)) {
+                            $images[] = $u;
+                        }
                     }
-                    $has_imgs  = !empty($images);
+                    $has_imgs = !empty($images);
                     $card_data = $has_imgs
-                        ? ' data-images="' . esc_attr(json_encode(array_values($images))) . '" data-title="' . esc_attr(get_the_title()) . '"'
-                        : '';
+                        ? ' data-images="' .
+                            esc_attr(json_encode(array_values($images))) .
+                            '" data-title="' .
+                            esc_attr(get_the_title()) .
+                            '"'
+                        : "";
                     ?>
             <div
                 class="col-12 col-md-4<?php echo $offset; ?>"
@@ -435,15 +445,6 @@
                                 "…",
                             ); ?>
                         </p>
-                        <?php if ($has_imgs): ?>
-                        <span class="project-card__link">
-                            Ver fotos <i class="fas fa-images"></i>
-                        </span>
-                        <?php else: ?>
-                        <a href="<?php echo esc_url(home_url('/proyectos')); ?>/#proyectos" class="project-card__link">
-                            Ver proyecto <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <?php endif; ?>
                     </div>
                 </div>
             </div>
