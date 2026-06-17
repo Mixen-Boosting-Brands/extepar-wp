@@ -32,7 +32,7 @@
                                     <address>
                                         Calle San Francisco Javier No. 3<br />
                                         Colonia Capula<br />
-                                        Tepoztlán, Estado de México<br />
+                                        Tepotzotlán, Estado de México<br />
                                         C.P. 54603
                                     </address>
                                 </li>
