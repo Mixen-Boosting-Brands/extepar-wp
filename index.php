@@ -49,7 +49,7 @@
             <div class="col-12" data-aos="fade-up">
                 <h2 class="section-split__heading">
                     <strong>El control</strong> inicial<br />
-                    <strong>evita correciones.</strong>
+                    <strong>evita correcciones.</strong>
                 </h2>
                 <p class="section-split__lead">
                     Extepar interviene en etapas críticas con seguimiento en campo para evitar sorpresas.
