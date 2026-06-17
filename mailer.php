@@ -37,7 +37,9 @@ $mail->Host       = MAILER_SMTP_HOST;
 $mail->SMTPAuth   = true;
 $mail->Username   = MAILER_SMTP_USERNAME;
 $mail->Password   = MAILER_SMTP_PASSWORD;
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->SMTPSecure = (int) MAILER_SMTP_PORT === 465
+    ? PHPMailer::ENCRYPTION_SMTPS
+    : PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port       = MAILER_SMTP_PORT;
 $mail->Timeout    = 30;
 $mail->SMTPOptions = [
