@@ -86,9 +86,9 @@
                 data-aos-delay="200"
                 class="site-footer__bottom d-flex flex-column flex-md-row justify-content-between gap-2"
             >
-                <span>© <?php echo date("Y"); ?> <?php echo get_bloginfo(
-     "name",
- ); ?>. Todos los derechos reservados.</span>
+                <span>© <?php echo date(
+                    "Y",
+                ); ?> EXTEPAR Construcciones S.A. de C.V. Todos los derechos reservados.</span>
                 <span>
                     <a href="<?php echo get_permalink(
                         3,
