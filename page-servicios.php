@@ -116,7 +116,9 @@ get_header(); ?>
                 class="col-12 col-lg-4 text-lg-end my-auto"
                 data-aos="fade-left"
             >
-                <a href="#" class="btn btn-primary rounded-pill">
+                <a href="<?php echo esc_url(
+                    home_url("/proyectos"),
+                ); ?>" class="btn btn-primary rounded-pill">
                     Ver proyectos
                 </a>
             </div>

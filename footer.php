@@ -44,8 +44,8 @@
                                 </li>
                                 <li>
                                     <i class="far fa-envelope"></i>
-                                    <a href="mailto:contacto@extepar.com"
-                                        >contacto@extepar.com</a
+                                    <a href="mailto:contacto@extepar.com.mx"
+                                        >contacto@extepar.com.mx</a
                                     >
                                 </li>
                             </ul>
