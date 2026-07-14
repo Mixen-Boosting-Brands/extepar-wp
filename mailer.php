@@ -51,7 +51,6 @@ $mail->SMTPOptions = [
 ];
 
 $mail->setFrom(MAILER_FROM_EMAIL, MAILER_FROM_NAME);
-$mail->addAddress(MAILER_TO_EMAIL, MAILER_TO_NAME);
 $mail->addReplyTo($correo, $nombre);
 $mail->isHTML(true);
 
@@ -71,7 +70,8 @@ switch ($form_type) {
         $dimensiones   = strip_tags(trim($_POST["dimensiones"]   ?? ""));
         $informacion   = htmlspecialchars(trim($_POST["informacion"] ?? ""));
 
-        $mail->Subject = "Nuevo contacto de proyecto – Extepar";
+        $mail->addAddress(MAILER_TO_EMAIL_CONTACTO, MAILER_TO_NAME_CONTACTO);
+        $mail->Subject = "Formulario Extepar";
         $mail->Body = "
             <h2>Nueva solicitud de contacto</h2>
             <p><strong>Nombre:</strong> {$nombre}</p>
@@ -110,6 +110,7 @@ switch ($form_type) {
         $empresa             = strip_tags(trim($_POST["empresa"]             ?? ""));
         $cargo               = strip_tags(trim($_POST["cargo"]               ?? ""));
 
+        $mail->addAddress(MAILER_TO_EMAIL, MAILER_TO_NAME);
         $mail->Subject = "Solicitud de evaluación técnica – Extepar";
         $mail->Body = "
             <h2>Solicitud de evaluación técnica</h2>
@@ -175,6 +176,7 @@ switch ($form_type) {
             $cv_label = "No";
         }
 
+        $mail->addAddress(MAILER_TO_EMAIL, MAILER_TO_NAME);
         $mail->Subject = "Nueva postulación – {$cargo} – Extepar";
         $mail->Body = "
             <h2>Nueva postulación de candidato</h2>
